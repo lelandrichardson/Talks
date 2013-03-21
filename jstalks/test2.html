@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    Function.prototype.chain = function(){
+        var args = Array.prototype.slice.call(arguments, 0);
+        args.splice(0,0,this);
+        return function(){
+            var innerArgs = arguments;
+            args.forEach(function(fn){
+                fn.apply(fn,innerArgs);
+            });
+            //Array.prototype.forEach.call(args,Function.prototype.call);
+        };
+    };
+
+    var a = function(hello){
+        console.log(hello + " from a");
+    };
+    var b = function(hello, again){
+        console.log(hello + again + " from b");
+    };
+    a.chain(b,a,b,b,a)("hello", " again");
+</script>
+</body>
+</html>

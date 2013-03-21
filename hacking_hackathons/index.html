@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js - The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style type="text/css">
+        .leftAlign {
+            text-align: left;
+        }
+        .rightAlign {
+            text-align: right;
+        }
+        .center {
+            text-align: center;
+        }
+
+        .fragment.render {
+            display:none;
+        }
+        .fragment.render.visible {
+            display: block;
+        }
+        .reveal .slides .fragment.render.first {
+            display: block;
+            opacity:1;
+        }
+        .reveal .slides .fragment.render.first.visible {
+            display: none;
+        }
+
+    </style>
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+<div class="slides">
+<section>
+    <h1>hacking&nbsp;</h1>
+    <h1>hackathons</h1>
+    <p>
+        <br>
+    </p>
+    <p>
+        <br>
+    </p>
+    <p>Leland Richardson</p>
+    <p>
+        <a href="http://twitter.com/intelligibabble">@intelligibabble</a>
+    </p>
+    <p>
+        <a href="http://tech.pro/leland">tech.pro/leland</a>
+    </p>
+</section>
+<section>
+    <section>
+        <h2>What is hacking?</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+
+            <blockquote style="text-align: left;">
+                <b>hack</b>: <i>verb</i>. to cut or shape by or as if by crude or ruthless strokes
+            </blockquote>
+            - Merriam Webster
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div style="text-align: left;">Original Usage:&nbsp;</div>
+        <div>"hacker" was someone who built furniture with an axe</div>
+
+
+
+
+
+    </section>
+    <section>
+        <h2>Full Disclosure</h2>
+        <div>this is how to build something that&nbsp;</div>
+        <div>
+            <br>
+        </div>
+        <div style="font-size: 130.0%;color: blue;font-weight: bold;">kind of, sort of works,</div>
+        <div style="font-size: 130.0%;color: blue;font-weight: bold;">
+            <br>
+        </div>
+        <div>and build it in an</div>
+        <div>
+            <br>
+        </div>
+        <div style="font-size: 130.0%;color: red;font-weight: bold;">awful, terrible sort of way</div>
+        <div style="font-size: 130.0%;color: red;font-weight: bold;">
+                            <span style="color: rgb(238,238,238);font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">
+                                <br>
+                            </span>
+        </div>
+        <div style="font-size: 130.0%;color: red;font-weight: bold;">
+            <span style="color: rgb(238,238,238);font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">very, very, quickly.</span>
+        </div>
+        <div style="font-size: 130.0%;color: red;font-weight: bold;">
+                            <span style="color: rgb(238,238,238);font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">
+                                <br>
+                            </span>
+        </div>
+        <div style="font-size: 130.0%;color: red;font-weight: bold;">
+                            <span style="color: rgb(238,238,238);font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">
+                                <br>
+                            </span>
+        </div>
+        <div style="font-size: 130.0%;color: red;">
+            <span style="color: rgb(238,238,238);font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">Please don't judge me.</span>
+            <br>
+        </div>
+
+
+    </section>
+</section>
+<section>
+    <section>
+        <h2>It's All About The Pitch</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <img src="http://i.imgur.com/GBLZtyh.jpg">
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>Focus</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <img src="http://weknowmemes.com/wp-content/uploads/2012/03/never-half-ass-two-things-whole-ass-one-thing.jpg" style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">
+            <br>
+        </div>
+    </section>
+</section>
+<section>
+    <h2>Splitting Up Development</h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div style="text-align: left;">//TODO:</div>
+    <div style="text-align: left;">- split up front end and back end</div>
+    <div style="text-align: left;">- decide on data contract between server + client (will be a dynamic thing)</div>
+    <div style="text-align: left;">- pair programming?</div>
+    <div style="text-align: left;">- build a "sample.json" file with example data, build your client off of this</div>
+</section>
+<section>
+    <h2>GitHub</h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>If you don't have an account, <b>get one now.</b>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>Seriously.</div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <a href="https://github.com/signup/">Github - Sign Up</a>
+    </div>
+
+</section>
+<section>
+    <section>
+        <h2>The BACK END</h2>
+    </section>
+    <section>
+        <h2>Stick With What Ya Know</h2>
+    </section>
+    <section>
+        <h2>API Only Design</h2>
+    </section>
+    <section>
+        <h2>Code Backwards</h2>
+    </section>
+    <section>
+        <h2>Optimize Nothing</h2>
+    </section>
+</section>
+
+<!--Package Managers-->
+<section>
+    <h2>Package Managers ARE YOUR FRIEND</h2>
+    <div class="leftAlign">Node.js -&gt; <a href="https://npmjs.org/">npm </a>(~25.5k)</div>
+    <pre><code>$ npm install {package name}</code></pre>
+
+    <div class="leftAlign">Ruby -&gt; <a href="http://rubygems.org/">Gems </a>(~53.2k) </div>
+    <pre><code>$ gem install {package name}</code></pre>
+
+    <div class="leftAlign">.NET -&gt; <a href="http://nuget.org/">Nuget </a>(~83.5k)</div>
+    <pre><code>$ Install-Package {package name}</code></pre>
+
+    <div class="leftAlign">PHP -&gt; <a href="http://getcomposer.org/">Composer</a> (~8.5k)</div>
+    <pre><code>$ php composer.phar install</code></pre>
+
+    <div class="leftAlign">JavaScript -&gt; <a href="https://github.com/twitter/bower">Bower</a>* (~1.2k)</div>
+    <pre><code>$ bower install {package name}</code></pre>
+</section>
+
+<section>
+    <section>
+        <h2>Deployment</h2>
+    </section>
+    <section>
+        <h2>Use the cloud, luke.</h2>
+        <div style="text-align: center;">Full-Service:</div>
+        <div style="text-align: center;">
+            <ul>
+                <li>Heroku (rails, node, php, ...)</li>
+                <li>AppFog (php, python, rails, .net, ...)</li>
+                <li>AppHarbor (.Net)</li>
+                <li>Google App Engine (java, python, Go)</li>
+                <li>Nodejitsu (node)</li>
+                <li>Modulus (node)</li>
+            </ul>
+            <div style="text-align: left;">
+                <br>
+            </div>
+            <div style="text-align: center;">Functional:</div>
+            <div style="text-align: center;">
+                <ul>
+                    <li>Amazon Web Services&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>But the Cloud doesn't work for me...</h2>
+        <div style="text-align: left;">Cheap Hosts:</div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+        <div>
+            <ul>
+                <li>BlueHost (linux, $4.95/mo)</li>
+                <li>WinHost (windows, $4.95/mo)</li>
+            </ul>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+        <div style="text-align: left;">Fallback: self-host it.</div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>More Links:</h2>
+        <div>
+            <ul>
+                <li>
+                    <a href="http://net.tutsplus.com/articles/editorials/appfog-vs-heroku/">AppFog vs Heroku</a>
+                </li>
+                <li>
+                    <br>
+                </li>
+            </ul>
+        </div>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>Data Storage</h2>
+    </section>
+    <section>
+        <h2>To SQL or to NoSQL?</h2>
+        <div>
+            <br>
+        </div>
+        <div>Again: Just stick with what you know.</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>//TODO:</div>
+        <div>use a ferrari for groceries?</div>
+        <div>Do you actually have big data problems?&nbsp;</div>
+        <div>what IS big data?</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>facebook -&gt; mysql</div>
+        <div>google analytics -&gt; mysql</div>
+        <div>stack exchange -&gt; mysql</div>
+        <div>twitter -&gt; mysql</div>
+        <div>wikipedia, slashdot, youtube</div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>Relational</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <ul>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>MS-SQL</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>NoSQL</h2>
+    </section>
+    <section>
+        <h2>Full Text Search</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <ul>
+                <li>Lucene / Solr</li>
+                <li>Elastic Search</li>
+                <li>*SQL</li>
+            </ul>
+        </div>
+    </section>
+</section>
+
+<section>
+    <h2>The Front End</h2>
+</section>
+
+<section>
+    <!--Javascript-->
+    <section>
+        <h2>Javascript</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <img src="http://i.imgur.com/gTon8gk.png">
+            <br>
+        </div>
+    </section>
+
+    <!--Javascript Libraries Title Slide-->
+    <section>
+        <h2>Libraries</h2>
+        <div>Libraries make life easier, but don't dictate it.</div>
+    </section>
+
+    <!--Javascript Libraries-->
+    <section>
+        <h2>Libraries</h2>
+
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://jquery.com/">jQuery</a>&nbsp;(32k)
+            </div>
+            <ul>
+                <li>DOM Manipulation</li>
+                <li>Incredibly Popular</li>
+                <li>Browser Compatibility</li>
+                <li>Plethora of Plugins</li>
+                <li>Really Fast</li>
+                <li>Isn't Cheap (32k)</li>
+                <li>Often abused/used incorrectly</li>
+            </ul>
+        </div>
+        <br/>
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://underscorejs.org/">UnderscoreJS</a>&nbsp;(4kb)
+            </div>
+            <ul>
+                <li>Useful utility functions</li>
+                <li>Makes code cleaner / intuitive</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--MV WhatEverything: Part 1-->
+    <section>
+        <h2>MV* WhatEverything</h2>
+        <!--<div>//TODO: seo implications, application structure, templating, etc.</div>-->
+        <div class="fragment render first">Hello</div>
+        <div class="fragment render">Hello2</div>
+    </section>
+
+    <!--MV WhatEverything: Part 2-->
+    <section>
+        <h2>MV* WhatEverything</h2>
+        <!--<div>//TODO: seo implications, application structure, templating, etc.</div>-->
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://backbonejs.org/">BackboneJS</a>
+            </div>
+            <ul>
+                <li>Popular</li>
+                <li>MVC Pattern</li>
+                <li>Compact (6.3kb*)</li>
+                <li>Tends to be verbose</li>
+                <li>RESTful Pattern</li>
+            </ul>
+        </div>
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://knockoutjs.com/">KnockoutJS</a>
+            </div>
+            <ul>
+                <li>Popular</li>
+                <li>MVVM Pattern</li>
+                <li>Declarative 2-way Bindings</li>
+                <li>Relatively Compact (14kb)</li>
+                <li>Easy to learn</li>
+            </ul>
+        </div>
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://emberjs.com/">EmberJS</a>
+            </div>
+        </div>
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://angularjs.org/">AngularJS</a>
+            </div>
+        </div>
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://dojotoolkit.org/">Dojo Toolkit</a>
+            </div>
+        </div>
+    </section>
+
+    <!--UI Libraries-->
+    <section>
+        <h2>UI Libraries</h2>
+
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://jqueryui.com">jQuery UI</a>
+            </div>
+            <ul>
+                <li>DOM Manipulation</li>
+                <!--TODO: llist-->
+            </ul>
+        </div>
+        <br/>
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://www.kendoui.com/web.aspx">Kendo UI</a>
+            </div>
+            <ul>
+                <li>Useful utility functions</li>
+                <!--TODO: List-->
+            </ul>
+        </div>
+    </section>
+
+    <!--Mobile-->
+    <section>
+        <h2>Mobile</h2>
+
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://www.kendoui.com/mobile.aspx">Kendo UI Mobile</a>
+            </div>
+            <ul>
+                <li>DOM Manipulation</li>
+                <!--TODO: llist-->
+            </ul>
+        </div>
+        <br/>
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://jquerymobile.com/">jQuery Mobile</a>
+            </div>
+            <ul>
+                <li>Useful utility functions</li>
+                <!--TODO: List-->
+            </ul>
+        </div>
+        <br/>
+        <div class="fragment">
+            <div class="leftAlign">
+                <a href="http://dojotoolkit.org/features/mobile">dojox/mobile</a>
+            </div>
+            <ul>
+                <li>Useful utility functions</li>
+                <!--TODO: List-->
+            </ul>
+        </div>
+
+    </section>
+
+    <!--Important Others-->
+    <section>
+        <h2>Important Other</h2>
+        <!--TODO: everything-->
+        <div>
+            <br>
+        </div>
+        <div>
+            <a href="http://modernizr.com/">modernizr</a>
+        </div>
+        <div>
+            <a href="http://requirejs.org/">RequireJS</a>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>//TODO:</div>
+        <div>talk about using require, define re-usable logic, import dependencies. use require in frontend.</div>
+    </section>
+
+    <!--More Links-->
+    <section>
+        <h2>More Links</h2>
+
+        <ul class="leftAlign">
+            <li>
+                <a href="http://zeptojs.com/">Zepto.js</a>
+                &nbsp;(alternative to jQuery weighing in at 9.7k. replicates jQuery's API almost exactly)
+            </li>
+            <li>
+                <a href="http://todomvc.com/">To Do MVC</a> (see simple To Do apps implemented in all of the major JS MV* frameworks)
+            </li>
+            <li>
+                <a href="https://github.com/documentcloud/backbone/wiki/Tutorials%2C-blog-posts-and-example-sites">Backbone Tutorials + Examples</a>
+            </li>
+        </ul>
+    </section>
+</section>
+
+
+<section>
+    <section>
+        <h2>HTML / CSS</h2>
+    </section>
+
+    <!--Design Is King-->
+    <section>
+        <h2>Design Is King.&nbsp;</h2>
+    </section>
+
+    <!--Suck at Design?-->
+    <section>
+        <h2>Suck at Design?</h2>
+        <div>Be resourceful. &nbsp;Even if you don't suck.</div>
+        <div style="text-align: left;">
+            <b>CSS Frameworks:</b>
+        </div>
+        <div style="text-align: left;">
+            <ul>
+                <li style="text-align: left;">
+                    <a href="http://twitter.github.com/bootstrap/" style="letter-spacing: -0.02em;">Twitter Bootstrap</a>
+                    <br>
+                </li>
+                <li style="text-align: left;">
+                    <a href="http://foundation.zurb.com/" style="letter-spacing: -0.02em;">Zurb Foundation</a>
+                    <br>
+                </li>
+                <li style="text-align: left;">
+                    <a href="http://designmodo.com/demo/flat-ui/" style="letter-spacing: -0.02em;">Flat UI</a>
+                    <br>
+                </li>
+                <li style="text-align: left;">
+                    <a href="http://www.getskeleton.com/" style="letter-spacing: -0.02em;">Skeleton</a>
+                    <br>
+                </li>
+            </ul>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+        <div style="text-align: left;">
+            <b>CSS Grid Systems:</b>
+        </div>
+        <div style="text-align: left;">
+            <ul>
+                <li>
+                    <a href="http://cssgrid.net/" style="letter-spacing: -0.02em;">1140 Grid</a>
+                    <br>
+                </li>
+                <li>
+                    <a href="http://gumbyframework.com/" style="letter-spacing: -0.02em;">Gumby</a>
+                    <br>
+                </li>
+                <li>
+                    <span style="letter-spacing: -0.02em;">*(also Bootstrap, Foundation, Skeleton)&nbsp;</span>
+                    <br>
+                </li>
+            </ul>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+        <div style="text-align: left;">
+            <b>Reset CSS Files:</b> <a href="http://necolas.github.com/normalize.css/">Normalize.css</a>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+    </section>
+
+    <!--More Links-->
+    <section>
+        <h2>More Links:</h2>
+        <div style="text-align: left;">
+            <a href="http://bootstraphero.com/the-big-badass-list-of-twitter-bootstrap-resources">Additional Bootstrap Resources - Bootstrap Hero</a>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+    </section>
+</section>
+
+
+<!--Prototyping-->
+<section>
+    <h2>Prototyping</h2>
+    <div>
+        <ul>
+            <li>
+                <a href="http://www.balsamiq.com/">Balsamiq </a>( 7-day trial)</li>
+            <li>
+                <a href="https://pidoco.com/">Pidoco </a>(30-day trial)</li>
+            <li>Dry-Erase Board</li>
+            <li>Pen and Paper</li>
+        </ul>
+    </div>
+</section>
+
+
+<section>
+
+    <section>
+        <h2>Strategy</h2>
+    </section>
+
+    <!--Code Only What People See-->
+    <section>
+        <h2>Code Only What People See</h2>
+    </section>
+
+    <!--Optimize Nothing-->
+    <section>
+        <h2>Optimize (almost) Nothing</h2>
+    </section>
+
+    <!--Pair Programming-->
+    <section>
+        <h2>Pair Programming</h2>
+    </section>
+</section>
+</div>
+
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: 'default',
+        transition: 'concave',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+
+</body>
+</html>
