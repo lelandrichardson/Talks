@@ -77,5 +77,21 @@ var chain = function(){
     chain(a,b,a,b,a,b)();
 })
 
+$.ajax({
+    url: "/mock/patient_get.json", //TODO: change to "/patients/" + id
+    type: "GET",
+    success: function(patient){/* ... */},
+    error: function(patient){ /* ... */}
+});
+
+$.ajax({
+    url: "/mock/patient_insert.json", //TODO: change to "/patients"
+    type: "GET", // TODO: change to "PUT"
+    success: function(patient){/* ... */},
+    error: function(patient){ /* ... */}
+});
+
+
+
 
 
