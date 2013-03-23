@@ -127,6 +127,11 @@
             <div style="text-align: left;">Original Usage:&nbsp;</div>
             <div>"hacker" was someone who built furniture with an axe</div>
         </div>
+        <div class="fragment">
+            <br>
+            <div style="text-align: left;">My Usage:&nbsp;</div>
+            <div>To create something useful in an unreasonably sounding period of time.</div>
+        </div>
 
 
 
@@ -162,48 +167,36 @@
         </aside>
     </section>
 
-    <!--Full Disclosure-->
-    <!--<section>-->
-        <!--<h2>Full Disclosure</h2>-->
+</section>
 
-        <!--<div>this is how to build something that&nbsp;</div>-->
-        <!--<br>-->
-        <!--<div>kind of, sort of works,</div>-->
-        <!--<br>-->
-        <!--<div>and build it in an</div>-->
-        <!--<br>-->
-        <!--<div>awful, terrible sort of way</div>-->
-        <!--<br>-->
-        <!--<div>very, very, quickly.</div>-->
-        <!--<br>-->
-        <!--<br>-->
-        <!--<div>Please don't judge me.</div>-->
+<!--It's all about the pitch-->
+<section>
+    <h2>It's All About The Pitch</h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <img src="http://i.imgur.com/GBLZtyh.jpg">
+        <br>
+    </div>
 
-
-    <!--</section>-->
+    <aside class="notes">
+        So the trick is to understand that what you are trying to create is a DEMO.
+        <br>
+        You are building a small piece of your app - but it is the important one.  It is the part
+        that will impress people.
+    </aside>
 
 </section>
 
-
 <section>
-    <!--It's all about the pitch-->
+
     <section>
-        <h2>It's All About The Pitch</h2>
-        <div>
-            <br>
-        </div>
-        <div>
-            <img src="http://i.imgur.com/GBLZtyh.jpg">
-            <br>
-        </div>
+        <h2>Strategy</h2>
 
         <aside class="notes">
-            So the trick is to understand that what you are trying to create is a DEMO.
-            <br>
-            You are building a small piece of your app - but it is the important one.  It is the part
-            that will impress people.
-        </aside>
 
+        </aside>
     </section>
 
     <!--Focus-->
@@ -221,20 +214,6 @@
             Find that *one thing* that will make your app great.
             <br>
             and WHOLE ASS it.
-        </aside>
-    </section>
-
-</section>
-
-
-
-<section>
-
-    <section>
-        <h2>Strategy</h2>
-
-        <aside class="notes">
-
         </aside>
     </section>
 
@@ -274,6 +253,10 @@
         <aside class="notes">
             *some caveats: if your value proposition *is* the optimization,
             or if speed will be a concern during the demo
+            <br>
+            (almost everything is a micro-optimization at this point)
+            <br>
+            This is just a proof of concept
         </aside>
     </section>
 
@@ -293,108 +276,9 @@
         </aside>
     </section>
 
-    <!--Communication Endpoints-->
+    <!--Mock Client/Server Behavior-->
     <section>
-        <h2>Communication Endpoints</h2>
-
-        <div>
-            Figure out what URI endpoints are needed to communicate between Client + Server.  Example (REST):
-        </div>
-        <br>
-        <div>
-
-            <ul>
-                <li>Insert Data (Forms)
-                    <pre><code>HTTP PUT /objects</code></pre>
-                </li>
-                <li>
-                    Searches (List Views)
-                    <pre><code>HTTP GET /objects/{query}/search</code></pre>
-                </li>
-                <li>
-                    Detail Views (Data Model)
-                    <pre><code>HTTP GET /objects/{id}</code></pre>
-                </li>
-                <li>3rd Party APIs</li>
-                <li class="fragment highlight-red">Remember: Only what you need</li>
-            </ul>
-
-        </div>
-
-        <aside class="notes">
-            What data creation needs to take place?
-            <br>
-            What list views do we have?
-            <br>
-            What Detail views?
-            <br>
-            How will we utilize 3rd pary API's?
-            <br>
-            Remember - only what you need.
-        </aside>
-    </section>
-
-    <!--Data Contract-->
-    <section>
-        <h2>Data Contract</h2>
-        <div>
-            <pre><code>$ GET /patient/12345
-{
-    "status": "success",
-    "type":"patient",
-    "data": {
-            "id": 12345,
-            "firstName": "John",
-            "lastName": "Doe",
-            "phones": "800-123-4567",
-            "email": [
-                "jd@example.com",
-                "jd@example.org"
-            ],
-            "dateOfBirth": "1980-01-02T00:00:00.000Z",
-            "registered": true
-    }
-}</code></pre>
-        </div>
-
-        <aside class="notes">
-
-        </aside>
-    </section>
-
-    <!--Data Contract-->
-    <section>
-    <h2>Data Contract</h2>
-    <div>
-        <pre><code>PUT /patients HTTP/1.1
-Host: www.myapp.com
-Content-Type: application/json
-Accept: */*
-
-{
-    "firstName": "John",
-    "lastName": "Doe",
-    "phones": "800-123-4567",
-    "email": [
-        "jd@example.com",
-        "jd@example.org"
-    ],
-    "dateOfBirth": "1980-01-02T00:00:00.000Z",
-    "registered": true
-}</code></pre>
-        </div>
-        <aside class="notes">
-            Mock up example data with your teammates, and decide what is needed.
-            <br>
-            Type it up in your IDE.
-            <br>
-            Save it.
-        </aside>
-    </section>
-
-    <!--Data Contract-->
-    <section>
-        <h2>Data Contract</h2>
+        <h2>Mock Client/Server Behavior</h2>
         <div>
             <ul>
                 <li>Use HTTP Debuggers to emulate Client Requests</li>
@@ -429,7 +313,11 @@ $.ajax({ /* PUT Example */
     <!--Pair Programming-->
     <section>
         <h2>Pair Programming</h2>
-        <div>More Productive than you'd think</div>
+        <ul>
+            <li>More Productive than you'd think</li>
+            <li>Leads to higher quality code, more quickly</li>
+            <li>Don't be the guy that hogs the keyboard for the whole weekend</li>
+        </ul>
 
 
         <aside class="notes">
@@ -438,7 +326,7 @@ $.ajax({ /* PUT Example */
             <br>
             Leads to higher quality code
             <br>
-            Make sure to take turns.
+            Don't be the guy that hogs the keyboard for the whole hackathon
         </aside>
     </section>
 
@@ -487,6 +375,7 @@ $.ajax({ /* PUT Example */
 
 </section>
 
+
 <section>
 
     <!--The Back End-->
@@ -534,46 +423,18 @@ $.ajax({ /* PUT Example */
     <!--ORMs-->
     <section>
         <h2>The ORM: Map Your Data</h2>
+        <ul>
+            <li>Minimizes SQL Development Time</li>
+            <li>Great for basic CRUD</li>
+            <li>Sometimes not as flexible</li>
+        </ul>
+
         <aside class="notes">
             Most apps will have some persistent storage mechanism.
             <br>
             ORMs can help manage this disconnect from your actual
             application code, and trivialize database interactions.
-        </aside>
-    </section>
-
-    <!--Code-First Patterns-->
-    <section>
-        <h2>Code-First Patterns</h2>
-        <ul>
-            <li>Minimizes SQL Development Time</li>
-            <li>Great for basic CRUD</li>
-            <li>Not as flexible</li>
-        </ul>
-    <div class="leftAlign">Install:</div>
-<pre><code>// Ruby On Rails
-$ gem install activerecord
-
-//.NET
-$ Install-Package EntityFramework
-$ Install-Package NHibernate
-
-// PHP
-{"require": {"doctrine/ormold": "1.2.4PR1"}}
-{"require": {"gabordemooij/redbean": "dev-master"}}
-
-//Node.js
-$ npm install sequelize</code></pre>
-<div class="leftAlign">
-    Links: <a href="https://rubygems.org/gems/activerecord">Rails/ActiveRecord</a>,
-    <a href="http://www.doctrine-project.org/">Doctrine</a>,
-    <a href="http://redbeanphp.com/quick_tour">RedBean</a>
-    <a href="http://msdn.microsoft.com/en-us/data/ef.aspx">Entity Framework</a>,
-    <a href="http://nhforge.org/">NHibernate</a>,
-    <a href="http://www.sequelizejs.com/">Sequelize</a>
-</div>
-
-        <aside class="notes">
+            <br>
             minimize SQL stuff,
             <br>
             great for crud
@@ -601,7 +462,7 @@ $ npm install sequelize</code></pre>
         <h2>Use the cloud, Luke.</h2>
 
         <div class="leftAlign">
-            <div>Full Service</div>
+            <div>Full Service: (I like Easy)</div>
             <ul>
                 <li><a href="http://www.heroku.com/">Heroku</a> (rails, node, php, ...)</li>
                 <li><a href="https://www.appfog.com/">AppFog</a> (php, python, rails, .net, ...)</li>
@@ -612,7 +473,7 @@ $ npm install sequelize</code></pre>
         </div>
         <br>
         <div class="leftAlign">
-            <div>Functional:</div>
+            <div>Functional: (I Like Control)</div>
             <ul>
                 <li><a href="http://aws.amazon.com/free/">Amazon Web Services</a> (Free Tier)</li>
                 <li><a href="http://www.windowsazure.com/en-us/pricing/free-trial/">Azure</a> (.NET, Free Trial)</li>
@@ -636,29 +497,6 @@ $ npm install sequelize</code></pre>
         <br>
         <br>
         <div class="leftAlign">... Or just self-host it.</div>
-        <aside class="notes">
-
-        </aside>
-    </section>
-
-    <!--More Links-->
-    <section>
-        <h2>More Links:</h2>
-        <div>
-            <ul>
-                <li>
-                    <a href="http://net.tutsplus.com/articles/editorials/appfog-vs-heroku/">AppFog vs Heroku</a>
-                </li>
-                <li>
-                    <br>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <!--TODO: getting started with heroku, aws, appfog, azure, etc.-->
-        </div>
-
         <aside class="notes">
 
         </aside>
@@ -773,7 +611,7 @@ $ npm install sequelize</code></pre>
             </div>
 
             <div>
-
+                *** make sure to talk about heroku here
             </div>
             <div>MongoDB</div>
             <div>
@@ -808,25 +646,11 @@ $ npm install sequelize</code></pre>
             </ul>
         </div>
         <aside class="notes">
-
-        </aside>
-    </section>
-
-    <!--More Links-->
-    <section>
-        <h2>More Links...</h2>
-        <div>
-        <ul>
-            <li>
-                <a href="http://tech.pro/tutorial/1142/building-faceted-search-with-postgresql">
-                    Building Faceted Search With PostgreSQL - Tech.Pro
-                </a>
-
-            </li>
-        </ul>
-        </div>
-        <aside class="notes">
-
+            google-like search syntax
+            <br>
+            string-based document stores
+            <br>
+            Inverted indexes
         </aside>
     </section>
 
@@ -870,322 +694,52 @@ $ npm install sequelize</code></pre>
         </aside>
     </section>
 
-    <!--Javascript Libraries-->
+    <!--JavaScript Frameworks-->
     <section>
-        <h2>Libraries You Should Know</h2>
-
-        <div class="fragment">
-            <div class="leftAlign">
-                <a href="http://jquery.com/">jQuery</a>&nbsp;(32kb)
-            </div>
-            <ul>
-                <li>DOM Manipulation</li>
-                <li>Incredibly Popular</li>
-                <li>Browser Compatibility</li>
-                <li>Plethora of Plugins</li>
-                <li>Really Fast</li>
-                <li>Isn't Cheap (32kb)</li>
-                <li>Often abused/used incorrectly</li>
-            </ul>
-        </div>
-        <br/>
-        <div class="fragment">
-            <div class="leftAlign">
-                <a href="http://underscorejs.org/">UnderscoreJS</a>&nbsp;(4kb)
-            </div>
-            <ul>
-                <li>Useful utility functions</li>
-                <li>Makes code cleaner / intuitive</li>
-            </ul>
-        </div>
+        <h2>JS Frameworks</h2>
+        <div>Frameworks dictate how your application is structured. Revolutionizing the capabilities of JavaScript</div>
 
         <aside class="notes">
 
         </aside>
     </section>
 
-
-    <!--MV WhatEverything: Part 1-->
+    <!--JavaScript Widgets & Mobile Libraries-->
     <section>
-        <h2>Web Application Structure</h2>
-
-        <div>
-            <img src="imgs/js_old_way.png">
-        </div>
-        <aside class="notes">
-
-        </aside>
-    </section>
-
-    <!--MV WhatEverything: Part 1-->
-    <section>
-        <h2>Web Application Structure</h2>
-
-        <div>
-            <img src="imgs/js_new_way.png">
-        </div>
+        <h2>JS Widgets & Mobile</h2>
+        <br>
+        <p>
+            Use Widget libraries and plugins to create rich applications quickly.
+        </p>
+        <br>
+        <p>
+            Create Native-feeling mobile applications in HTML/JS.
+            <a href="http://phonegap.com/">PhoneGap</a> can package application to be app-store ready.
+        </p>
 
         <aside class="notes">
 
         </aside>
     </section>
 
-
-    <!--MV WhatEverything: Part 1-->
+    <!--JavaScript Summary-->
     <section>
-        <h2>MV* WhatEverything</h2>
-
-        <div>
-            <div>JavaScript MV* Frameworks are taking over, and...</div>
-            <br>
-            <ul>
-                <li>Reduce interactions with DOM</li>
-                <li>Help promote "Best Practice" Patterns</li>
-                <li>Make JS feel like real programming</li>
-                <li>Open the door for End-to-End Solutions</li>
-                <li>Have complicated SEO implications</li>
-            </ul>
-        </div>
-        <aside class="notes">
-
-        </aside>
-
-    </section>
-
-
-    <!--MV WhatEverything: Part 2-->
-    <section>
-        <h2>MV* WhatEverything</h2>
-        <div class="fragment">
-            <div class="leftAlign">
-                <a href="http://backbonejs.org/">BackboneJS</a>
-            </div>
-            <ul>
-                <li>Popular</li>
-                <li>Model-View (Router) Pattern</li>
-                <li>Compact (6.3kb*)</li>
-                <li>Tends to be verbose</li>
-                <li>RESTful Pattern</li>
-            </ul>
-        </div>
-        <div class="fragment">
-            <div class="leftAlign">
-                <a href="http://knockoutjs.com/">KnockoutJS</a>
-            </div>
-            <ul>
-                <li>Popular</li>
-                <li>MVVM Pattern</li>
-                <li>Declarative 2-way Bindings</li>
-                <li>Relatively Compact (14kb)</li>
-                <li>Easy to learn</li>
-            </ul>
-        </div>
-        <div class="fragment">
-            <div class="leftAlign">
-                <a href="http://emberjs.com/">EmberJS</a>
-            </div>
-        </div>
-        <div class="fragment">
-            <div class="leftAlign">
-                <a href="http://angularjs.org/">AngularJS</a>
-            </div>
-        </div>
-        <div class="fragment">
-            <div class="leftAlign">
-                <a href="http://dojotoolkit.org/">Dojo Toolkit</a>
-            </div>
-        </div>
-
-        <aside class="notes">
-
-        </aside>
-
-    </section>
-
-    <!--UI Libraries-->
-    <section>
-        <h2>UI Libraries</h2>
-
-        <div class="fragment">
-            <div class="leftAlign">
-                <a href="http://jqueryui.com">jQuery UI</a>
-            </div>
-            <ul>
-                <li>Consistent API</li>
-                <li>Very Popular</li>
-                <li>Easily Expanded & Customizable</li>
-                <li><a href="http://jqueryui.com/download/">Modular</a></li>
-                <li><a href="http://jqueryui.com/themeroller/">Themes / Theme Builder</a></li>
-            </ul>
-        </div>
-        <br/>
-        <div class="fragment">
-            <div class="leftAlign">
-                <a href="http://www.kendoui.com/web.aspx">Kendo UI</a>
-            </div>
-            <ul>
-                <li><a href="http://demos.kendoui.com/web/overview/index.html">Expansive Library</a></li>
-                <li><a href="http://www.kendoui.com/download.aspx">Server Wrappers Available</a></li>
-                <li><a href="http://demos.kendoui.com/themebuilder/web.html">Themes / Theme Builder</a></li>
-            </ul>
-        </div>
-
-        <aside class="notes">
-
-        </aside>
-    </section>
-
-    <!--Mobile-->
-    <section>
-        <h2>Mobile</h2>
-
-        <div class="fragment" data-fragment-index="1">
-            <div class="leftAlign">
-                <a href="http://www.kendoui.com/mobile.aspx">Kendo UI Mobile</a>
-            </div>
-            <ul class="fragment hide" data-fragment-index="2">
-                <li>Build "Native"-Feeling UIs (device specific)</li>
-                <li>Customizable Themes</li>
-                <li>Free 30 day trial</li>
-            </ul>
-        </div>
-        <br/>
-        <div class="fragment" data-fragment-index="2">
-            <div class="leftAlign">
-                <a href="http://jquerymobile.com/">jQuery Mobile</a>
-            </div>
-            <ul class="fragment hide" data-fragment-index="3">
-                <li>Popular</li>
-                <li>Free</li>
-                <li>Customizable Themes</li>
-                <li>Modular</li>
-            </ul>
-        </div>
-        <br/>
-        <div class="fragment" data-fragment-index="3">
-            <div class="leftAlign">
-                <a href="http://dojotoolkit.org/features/mobile">dojox/mobile</a>
-            </div>
-        </div>
-        <br/>
-        <div class="fragment">
-            <div class="leftAlign">
-                <a href="http://dojotoolkit.org/features/mobile">Sencha Touch</a>
-            </div>
-        </div>
-        <br/>
-        <div class="fragment">
-            <div class="leftAlign">
-                <a href="http://phonegap.com/">PhoneGap</a>
-            </div>
-            <div>
-                Take the pain out of compiling PhoneGap apps. Get app-store ready apps without the headache of maintaining native SDKs.
-            </div>
-        </div>
-
-
-        <aside class="notes">
-
-        </aside>
-    </section>
-
-    <!--Require JS-->
-    <section>
-        <h2>Require.JS</h2>
-        <div>
-            <ul>
-                <li>Asynchronous Module Definition (AMD)</li>
-                <li>Keep track of dependencies intelligently</li>
-                <li>Write Code in Modules</li>
-                <li>Prevents Global Namespace Pollution</li>
-                <li><a href="http://requirejs.org/">requirejs.org</a></li>
-            </ul>
-        </div>
-
-        <aside class="notes">
-
-        </aside>
-    </section>
-
-    <!--Require JS : 2-->
-    <section>
-        <h2>Require.JS</h2>
-        <div>
-            <div>Defining Modules</div>
-            <pre><code>//Explicitly defines the "foo/module" module:
-define("foo/module", ["jquery", "foo/other"],
-    function($, other) {
-        //Define foo/module object in here.
-        // jQuery '$' and 'other' modules are set as dependencies
-    }
-);
-</code></pre>
-        </div>
-
-        <aside class="notes">
-
-        </aside>
-    </section>
-
-    <!--Require JS : 3-->
-    <section>
-        <h2>Require.JS</h2>
-        <div>
-            <div>Application Code</div>
-            <pre><code>// Explicitly injects dependent modules
-require(["jquery","foo/other","foo/module"],
-    function($,other,module){
-        //write page-level logic here
-        module.start();
-        other.bind("#someElementId");
-        $("#someElementId").animate(/* ... */);
-        // ...
-    }
-);</code></pre>
-        </div>
-
-        <aside class="notes">
-
-        </aside>
-    </section>
-
-    <!--More Links-->
-    <section>
-        <h2>More Links</h2>
-
-        <ul class="leftAlign">
-            <li><a href="https://developers.google.com/speed/libraries/devguide">Google Hosted CDN</a></li>
-            <li><a href="http://cdnjs.com/">CDNJS.com - Free JS/CSS CDN</a></li>
-            <li><a href="http://tech.pro/tutorial/1118/intro-to-backbonejs"></a>Intro to Backbone.js - Tech.Pro</li>
-            <li><a href="http://tech.pro/tutorial/1104/how-to-write-maintainable-jquery-applications">
-                How To Write Maintainable jQuery Applications - Tech.Pro</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li>
-                <a href="http://zeptojs.com/">Zepto.js</a>
-                &nbsp;(alternative to jQuery weighing in at 9.7k. replicates jQuery's API almost exactly)
-            </li>
-            <li>
-                <a href="http://todomvc.com/">To Do MVC</a> (see simple To Do apps implemented in all of the major JS
-                MV* frameworks)
-            </li>
-            <li>
-                <a href="https://github.com/documentcloud/backbone/wiki/Tutorials%2C-blog-posts-and-example-sites">Backbone Tutorials + Examples</a>
-            </li>
-            <li>
-                <a href="http://cdn.sencha.io/touch/sencha-touch-2.1.0/examples/">Sencha Touch Examples</a>
-            </li>
-            <li><a href="http://demos.kendoui.com/">Kendo UI Demos</a></li>
-            <li><a href="http://www.chartjs.org/">Chart.js - JavaScript Data Visualization</a></li>
+        <h2>JavaScript Summary</h2>
+        <ul>
+            <li>Use libraries to write clean/concise code.</li>
+            <li>Don't worry about bloat (for now)</li>
+            <li>Utilize UI Libraries for rich interactions</li>
+            <li>Frameworks: Be mindful of scope creep</li>
+            <li><a href="http://knockoutjs.com">KnockoutJS</a> is the easiest to learn in my experience</li>
+            <li>Use RequireJS to modularize your app and import dependencies</li>
+            <li>Use 3rd-party CDNs</li>
         </ul>
 
         <aside class="notes">
-            Talk about CDN urls...
+
         </aside>
     </section>
+
 </section>
 
 
@@ -1271,9 +825,420 @@ require(["jquery","foo/other","foo/module"],
         </aside>
     </section>
 
+</section>
+
+<!--Giving Back-->
+<section>
+    <h2>Giving Back</h2>
+    <ul>
+        <li>Give back to the community</li>
+        <li>So many wonderful free resources online.</li>
+        <li>Do a really cool hack? <a href="http://tech.pro/write-with-us">Write a tutorial</a>.</li>
+        <li>Do it with <a href="http://tech.pro">Tech.Pro</a> and <a href="http://tech.pro/write-with-us">win some $$$</a></li>
+    </ul>
+</section>
+
+<!--Wrapping Up-->
+<section>
+    <h2>Wrapping Up</h2>
+    <ul>
+        <li>Use the interwebs</li>
+        <li>Use this presentation</li>
+        <li>Have fun. Learn stuff.</li>
+    </ul>
+    <br>
+    <br>
+    <div>Use Tech.Pro: <a href="http://tech.pro/tutorials">tech.pro/tutorials</a></div>
+    <div>This Presentation: <a href="http://bit.ly/hackhackathons">bit.ly/hackhackathons</a></div>
+</section>
+
+<section>
+
+    <section>
+        <h2>More Links & Resources</h2>
+    </section>
+
+    <!--Code-First Patterns-->
+    <section>
+        <h2>ORMs: Code-First Patterns</h2>
+
+        <div class="leftAlign">Install:</div>
+<pre><code>// Ruby On Rails
+$ gem install activerecord
+
+//.NET
+$ Install-Package EntityFramework
+$ Install-Package NHibernate
+
+// PHP
+{"require": {"doctrine/ormold": "1.2.4PR1"}}
+{"require": {"gabordemooij/redbean": "dev-master"}}
+
+//Node.js
+    $ npm install sequelize</code></pre>
+        <div class="leftAlign">
+            Links: <a href="https://rubygems.org/gems/activerecord">Rails/ActiveRecord</a>,
+            <a href="http://www.doctrine-project.org/">Doctrine</a>,
+            <a href="http://redbeanphp.com/quick_tour">RedBean</a>
+            <a href="http://msdn.microsoft.com/en-us/data/ef.aspx">Entity Framework</a>,
+            <a href="http://nhforge.org/">NHibernate</a>,
+            <a href="http://www.sequelizejs.com/">Sequelize</a>
+        </div>
+
+        <aside class="notes">
+
+        </aside>
+    </section>
+
+    <!--Deployment: More Links-->
+    <section>
+        <h2>Deployment: More Links:</h2>
+        <div>
+            <ul>
+                <li>
+                    <a href="http://net.tutsplus.com/articles/editorials/appfog-vs-heroku/">AppFog vs Heroku</a>
+                </li>
+                <li>
+                    <br>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <!--TODO: getting started with heroku, aws, appfog, azure, etc.-->
+        </div>
+
+        <aside class="notes">
+
+        </aside>
+    </section>
+
+    <!--Data Storage: More Links-->
+    <section>
+        <h2>Data Storage: More Links</h2>
+        <div>
+            <ul>
+                <li>
+                    <a href="http://tech.pro/tutorial/1142/building-faceted-search-with-postgresql">
+                        Building Faceted Search With PostgreSQL - Tech.Pro
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+        <aside class="notes">
+
+        </aside>
+    </section>
+
+    <!--Javascript Libraries-->
+    <section>
+        <h2>Libraries You Should Know</h2>
+
+        <div>
+            <div class="leftAlign">
+                <a href="http://jquery.com/">jQuery</a>&nbsp;(32kb)
+            </div>
+            <ul>
+                <li>DOM Manipulation</li>
+                <li>Incredibly Popular</li>
+                <li>Browser Compatibility</li>
+                <li>Plethora of Plugins</li>
+                <li>Really Fast</li>
+                <li>Isn't Cheap (32kb)</li>
+                <li>Often abused/used incorrectly</li>
+            </ul>
+        </div>
+        <br/>
+        <div>
+            <div class="leftAlign">
+                <a href="http://underscorejs.org/">UnderscoreJS</a>&nbsp;(4kb)
+            </div>
+            <ul>
+                <li>Useful utility functions</li>
+                <li>Makes code cleaner / intuitive</li>
+            </ul>
+        </div>
+
+        <aside class="notes">
+
+        </aside>
+    </section>
+
+    <!--MV WhatEverything: Part 1-->
+    <section>
+        <h2>Web Application Structure</h2>
+
+        <div>
+            <img src="imgs/js_old_way.png">
+        </div>
+        <aside class="notes">
+
+        </aside>
+    </section>
+
+    <!--MV WhatEverything: Part 1-->
+    <section>
+        <h2>Web Application Structure</h2>
+
+        <div>
+            <img src="imgs/js_new_way.png">
+        </div>
+
+        <aside class="notes">
+
+        </aside>
+    </section>
+
+    <!--MV WhatEverything: Part 1-->
+    <section>
+        <h2>MV* WhatEverything</h2>
+
+        <div>
+            <div>JavaScript MV* Frameworks are taking over, and...</div>
+            <br>
+            <ul>
+                <li>Reduce interactions with DOM</li>
+                <li>Help promote "Best Practice" Patterns</li>
+                <li>Make JS feel like real programming</li>
+                <li>Open the door for End-to-End Solutions</li>
+                <li>Have complicated SEO implications</li>
+            </ul>
+        </div>
+        <aside class="notes">
+
+        </aside>
+
+    </section>
+
+    <!--MV WhatEverything: Part 2-->
+    <section>
+        <h2>MV* WhatEverything</h2>
+        <div>
+            <div class="leftAlign">
+                <a href="http://backbonejs.org/">BackboneJS</a>
+            </div>
+            <ul>
+                <li>Popular</li>
+                <li>Model-View (Router) Pattern</li>
+                <li>Compact (6.3kb*)</li>
+                <li>Tends to be verbose</li>
+                <li>RESTful Pattern</li>
+            </ul>
+        </div>
+        <div>
+            <div class="leftAlign">
+                <a href="http://knockoutjs.com/">KnockoutJS</a>
+            </div>
+            <ul>
+                <li>Popular</li>
+                <li>MVVM Pattern</li>
+                <li>Declarative 2-way Bindings</li>
+                <li>Relatively Compact (14kb)</li>
+                <li>Easy to learn</li>
+            </ul>
+        </div>
+        <div>
+            <div class="leftAlign">
+                <a href="http://emberjs.com/">EmberJS</a>
+            </div>
+        </div>
+        <div>
+            <div class="leftAlign">
+                <a href="http://angularjs.org/">AngularJS</a>
+            </div>
+        </div>
+        <div>
+            <div class="leftAlign">
+                <a href="http://dojotoolkit.org/">Dojo Toolkit</a>
+            </div>
+        </div>
+
+        <aside class="notes">
+
+        </aside>
+
+    </section>
+
+    <!--UI Libraries-->
+    <section>
+        <h2>UI Libraries</h2>
+
+        <div>
+            <div class="leftAlign">
+                <a href="http://jqueryui.com">jQuery UI</a>
+            </div>
+            <ul>
+                <li>Consistent API</li>
+                <li>Very Popular</li>
+                <li>Easily Expanded & Customizable</li>
+                <li><a href="http://jqueryui.com/download/">Modular</a></li>
+                <li><a href="http://jqueryui.com/themeroller/">Themes / Theme Builder</a></li>
+            </ul>
+        </div>
+        <br/>
+        <div>
+            <div class="leftAlign">
+                <a href="http://www.kendoui.com/web.aspx">Kendo UI</a>
+            </div>
+            <ul>
+                <li><a href="http://demos.kendoui.com/web/overview/index.html">Expansive Library</a></li>
+                <li><a href="http://www.kendoui.com/download.aspx">Server Wrappers Available</a></li>
+                <li><a href="http://demos.kendoui.com/themebuilder/web.html">Themes / Theme Builder</a></li>
+            </ul>
+        </div>
+
+        <aside class="notes">
+
+        </aside>
+    </section>
+
+    <!--Mobile-->
+    <section>
+        <h2>Mobile</h2>
+
+        <div>
+            <div class="leftAlign">
+                <a href="http://www.kendoui.com/mobile.aspx">Kendo UI Mobile</a>
+            </div>
+            <ul class="leftAlign">
+                <li>Build "Native"-Feeling UIs (device specific)</li>
+                <li>Customizable Themes</li>
+                <li>Free 30 day trial</li>
+            </ul>
+        </div>
+        <br/>
+        <div>
+            <div class="leftAlign">
+                <a href="http://jquerymobile.com/">jQuery Mobile</a>
+            </div>
+            <ul class="leftAlign">
+                <li>Popular</li>
+                <li>Free</li>
+                <li>Customizable Themes</li>
+                <li>Modular</li>
+            </ul>
+        </div>
+        <br/>
+        <div>
+            <div class="leftAlign">
+                <a href="http://dojotoolkit.org/features/mobile">dojox/mobile</a>
+            </div>
+            <div class="leftAlign">
+                <a href="http://dojotoolkit.org/features/mobile">Sencha Touch</a>
+            </div>
+            <div class="leftAlign">
+                <a href="http://phonegap.com/">PhoneGap</a>
+            </div>
+        </div>
+
+
+        <aside class="notes">
+
+        </aside>
+    </section>
+
+    <!--Require JS-->
+    <section>
+        <h2>Require.JS</h2>
+        <div>
+            <ul>
+                <li>Asynchronous Module Definition (AMD)</li>
+                <li>Keep track of dependencies intelligently</li>
+                <li>Write Code in Modules</li>
+                <li>Prevents Global Namespace Pollution</li>
+                <li><a href="http://requirejs.org/">requirejs.org</a></li>
+            </ul>
+        </div>
+
+        <aside class="notes">
+
+        </aside>
+    </section>
+
+    <!--Require JS : 2-->
+    <section>
+        <h2>Require.JS</h2>
+        <div>
+            <div>Defining Modules</div>
+            <pre><code>//Explicitly defines the "foo/module" module:
+                define("foo/module", ["jquery", "foo/other"],
+                function($, other) {
+                //Define foo/module object in here.
+                // jQuery '$' and 'other' modules are set as dependencies
+                }
+                );
+            </code></pre>
+        </div>
+
+        <aside class="notes">
+
+        </aside>
+    </section>
+
+    <!--Require JS : 3-->
+    <section>
+        <h2>Require.JS</h2>
+        <div>
+            <div>Application Code</div>
+            <pre><code>// Explicitly injects dependent modules
+                require(["jquery","foo/other","foo/module"],
+                function($,other,module){
+                //write page-level logic here
+                module.start();
+                other.bind("#someElementId");
+                $("#someElementId").animate(/* ... */);
+                // ...
+                }
+                );</code></pre>
+        </div>
+
+        <aside class="notes">
+
+        </aside>
+    </section>
+
     <!--More Links-->
     <section>
-        <h2>More Links:</h2>
+        <h2>JavaScript: More Links</h2>
+
+        <ul class="leftAlign">
+            <li><a href="https://developers.google.com/speed/libraries/devguide">Google Hosted CDN</a></li>
+            <li><a href="http://cdnjs.com/">CDNJS.com - Free JS/CSS CDN</a></li>
+            <li><a href="http://tech.pro/tutorial/1118/intro-to-backbonejs"></a>Intro to Backbone.js - Tech.Pro</li>
+            <li><a href="http://tech.pro/tutorial/1104/how-to-write-maintainable-jquery-applications">
+                How To Write Maintainable jQuery Applications - Tech.Pro</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li>
+                <a href="http://zeptojs.com/">Zepto.js</a>
+                &nbsp;(alternative to jQuery weighing in at 9.7k. replicates jQuery's API almost exactly)
+            </li>
+            <li>
+                <a href="http://todomvc.com/">To Do MVC</a> (see simple To Do apps implemented in all of the major JS
+                MV* frameworks)
+            </li>
+            <li>
+                <a href="https://github.com/documentcloud/backbone/wiki/Tutorials%2C-blog-posts-and-example-sites">Backbone Tutorials + Examples</a>
+            </li>
+            <li>
+                <a href="http://cdn.sencha.io/touch/sencha-touch-2.1.0/examples/">Sencha Touch Examples</a>
+            </li>
+            <li><a href="http://demos.kendoui.com/">Kendo UI Demos</a></li>
+            <li><a href="http://www.chartjs.org/">Chart.js - JavaScript Data Visualization</a></li>
+        </ul>
+
+        <aside class="notes">
+            Talk about CDN urls...
+        </aside>
+    </section>
+
+    <!--HTML/CSS: More Links-->
+    <section>
+        <h2>HTML/CSS: More Links:</h2>
         <div style="text-align: left;">
             <a href="http://bootstraphero.com/the-big-badass-list-of-twitter-bootstrap-resources">Additional Bootstrap Resources - Bootstrap Hero</a>
         </div>
@@ -1286,26 +1251,26 @@ require(["jquery","foo/other","foo/module"],
         </aside>
 
     </section>
-</section>
 
+    <!--Prototyping-->
+    <section>
+        <h2>Prototyping</h2>
+        <div>
+            <ul>
+                <li>
+                    <a href="http://www.balsamiq.com/">Balsamiq </a>( 7-day trial)</li>
+                <li>
+                    <a href="https://pidoco.com/">Pidoco </a>(30-day trial)</li>
+                <li>Dry-Erase Board</li>
+                <li>Pen and Paper</li>
+            </ul>
+        </div>
 
-<!--Prototyping-->
-<section>
-    <h2>Prototyping</h2>
-    <div>
-        <ul>
-            <li>
-                <a href="http://www.balsamiq.com/">Balsamiq </a>( 7-day trial)</li>
-            <li>
-                <a href="https://pidoco.com/">Pidoco </a>(30-day trial)</li>
-            <li>Dry-Erase Board</li>
-            <li>Pen and Paper</li>
-        </ul>
-    </div>
+        <aside class="notes">
 
-    <aside class="notes">
+        </aside>
+    </section>
 
-    </aside>
 </section>
 
 
