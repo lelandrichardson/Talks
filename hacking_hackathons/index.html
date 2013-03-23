@@ -1316,7 +1316,7 @@ $ Install-Package NHibernate
         $("a").each(function(){
             var $el = $(this),
                 isLink = $el.attr("href").indexOf("#")== 0;
-            if(true){$el.attr("target","_blank");}
+            if(isLink){$el.attr("target","_blank");}
         });
     });
 </script>
