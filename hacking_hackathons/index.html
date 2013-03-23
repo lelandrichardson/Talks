@@ -52,8 +52,8 @@
             display: none;
         }
         .moreLinks {
-            font-size: 60%;
-            line-height: 60%;
+            font-size: 60% !important;
+            line-height: 60% !important;
         }
     </style>
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
@@ -931,8 +931,16 @@ $ Install-Package NHibernate
                     <a href="http://tech.pro/tutorial/1142/building-faceted-search-with-postgresql">
                         Building Faceted Search With PostgreSQL - Tech.Pro
                     </a>
-
                 </li>
+                <li>
+                    <a href="http://tech.pro/tutorial/1102/three-tricks-to-get-more-out-of-sql-server-in-common-web-scenarios">
+                        Three tricks to get more out of SQL Server in common web scenarios - Tech.Pro
+                    </a>
+                </li>
+                <li><a href="http://try.mongodb.org/">Interactive MongoDB Tutorial</a></li>
+                <li><a href="http://howtonode.org/node-js-and-mongodb-getting-started-with-mongojs">Node.js and MongoDB - Getting started with MongoJS</a></li>
+                <li><a href="http://net.tutsplus.com/tutorials/databases/getting-started-with-mongodb/">Getting Started with MongoDB</a></li>
+                <li><a href="http://dev.mysql.com/downloads/workbench/">Download MySQL Workbench</a></li>
             </ul>
         </div>
         <aside class="notes">
@@ -1221,9 +1229,6 @@ $ Install-Package NHibernate
                 Building a shopping cart with SignalR, ASP.NET Web API and Knockout.js - Tech.Pro
             </a></li>
             <li><a href="http://tech.pro/tutorial/1156/using-requirejs-in-an-aspnet-mvc-application">Using Require.js in an ASP.NET MVC application - Tech.Pro</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
             <li>
                 <a href="http://zeptojs.com/">Zepto.js</a>
                 &nbsp;(alternative to jQuery weighing in at 9.7k. replicates jQuery's API almost exactly)
@@ -1322,12 +1327,12 @@ $ Install-Package NHibernate
     });
     
 </script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
     $(function(){
         $("a").each(function(){
             var $el = $(this),
-                isLink = $el.attr("href").indexOf("#")== 0;
+                isLink = $el.attr("href").indexOf("#")!==0;
             if(isLink){$el.attr("target","_blank");}
         });
     });
