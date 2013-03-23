@@ -1308,8 +1308,17 @@ $ Install-Package NHibernate
             // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
     });
-
+    
 </script>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        $("a").each(function(){
+            var $el = $(this),
+                isLink = $el.attr("href").indexOf("#")== 0;
+            if(true){$el.attr("target","_blank");}
+        });
+    });
+</script>
 </body>
 </html>
