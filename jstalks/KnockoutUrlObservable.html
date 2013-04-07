@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    Url:
+    <input type="text" data-bind="value: test, valueUpdate: 'afterkeydown'">
+</div>
+<div>
+    Host To Enforce:
+    <input type="text" data-bind="value: host, valueUpdate: 'afterkeydown'">
+</div>
+<div>
+    Bound Value: <span data-bind="text: test"></span>
+</div>
+<div>
+    <button data-bind="click: enforceHost">Enforce Host</button>
+    <pre data-bind="text: JSON.stringify(ko.toJS(test.url), null, 2)"></pre>
+</div>
+
+
+
+    <script src="extjs/knockout-2.2.1.js" type="text/javascript"></script>
+
+    <script>
+        ko.subscribable.fn.url = function () {
+            var target = this;
+            //create anchor tag to perform parsing for us
+            var parser = document.createElement('a');
+
+            target.url = ko.observable();
+
+
+            //define a function to do validation
+            function onChange(newValue) {
+                parser.href = newValue;
+                target.url({
+                    protocol: parser.protocol,
+                    hostname: parser.hostname,
+                    port: parser.port,
+                    path: parser.pathname,
+                    queryString: parser.search,
+                    hash: parser.hash,
+                    host: parser.host
+                });
+            }
+
+            target.enforceNonRelative = function () {
+                var newvalue = target();
+                if (newvalue.indexOf('http:') !== 0 &&
+                    newvalue.indexOf('https:') !== 0 &&
+                    newvalue.indexOf('//') !== 0) {
+                    //modify url to be relative..
+                    newvalue = "http://" + newvalue;
+                }
+                target(newvalue);
+            };
+
+            target.enforceHost = function(host, protocol) {
+                var newvalue = target();
+                protocol = protocol || "http:"; //target.url().protocol;
+                host = host.toLowerCase();
+                if(newvalue.toLowerCase().indexOf(host) === 0) {
+                    newvalue = protocol + "//" + newvalue;
+                }
+                else if (target.url().host.toLowerCase() !== host) {
+                    if(newvalue.indexOf('/')!==0) {
+                        newvalue = "/" + newvalue;
+                    }
+                    //modify url to be relative..
+                    newvalue = protocol + "//" + host + newvalue;
+                }
+                target(newvalue);
+            };
+            //initial
+            onChange(target());
+
+            //update whenever the value changes
+            target.subscribe(onChange);
+
+            //return the original observable
+            return target;
+        };
+
+        var vm = {
+            test: ko.observable().url(),
+            host: ko.observable()
+        };
+        vm.enforceHost = function() {
+            this.test.enforceHost(this.host());
+        };
+        vm.info = ko.computed(function(){
+            return JSON.stringify(this.test.url());
+        },vm);
+        ko.applyBindings(vm);
+    </script>
+</body>
+</html>

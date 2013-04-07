@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="css/rubyblue.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="content">
+            <div class="row-fluid" data-bind="">
+                <div class="span9" data-bind="">
+                    <div data-bind="">
+                        <h3>HTML</h3>
+                        <div data-bind="htmlEditor: html"></div>
+                    </div>
+                    <div data-bind="">
+                        <h3>JavaScript</h3>
+                        <div data-bind="jsEditor: js"></div>
+                    </div>
+                </div>
+
+                <div class="span3" data-bind="">
+                    <h3 data-bind="attr: { title: error }">Result</h3>
+                    <div class="sample" data-bind="sample: $data"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script data-main="js/main" src="js/ext/require.js"></script>
+</body>
+</html>

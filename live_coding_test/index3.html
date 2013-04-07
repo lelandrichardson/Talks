@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <input data-bind="value: test, valueUpdate: 'afterkeydown'" /><hr/>
+    <div data-bind="text: test"></div>
+
+
+    <script type="text/javascript" src="js/ext/knockout-2.1.0.js"></script>
+    <script type="text/javascript">
+        var ViewModel = function() {
+            this.test = ko.observable("Testing123");
+        };
+        ko.applyBindings(new ViewModel());
+    </script>
+</body>
+</html>

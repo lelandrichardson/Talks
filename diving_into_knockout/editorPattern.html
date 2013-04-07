@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="lib/knockout-2.2.1.js"></script>
+    <script src="ko.extensions.js"></script>
+</head>
+<body>
+
+    <input type="text" data-bind="value: first, valueUpdate: 'afterkeydown'"/><br>
+    <input type="text" data-bind="value: last, valueUpdate: 'afterkeydown'"/><br>
+    <input type="text" data-bind="value: username, valueUpdate: 'afterkeydown'"/>
+    <hr>
+    <a href="#" data-bind="click: revert">Cancel</a>
+    <a href="#" data-bind="click: commit">Save</a>
+
+    <pre data-bind="text: ko.toJSON.call(null,$root,null,2)"></pre>
+
+
+    <script>
+
+        var ViewModel = ko.modelEditor(function(spec){
+            this.first = ko.observable();
+            this.last = ko.observable();
+            this.username = ko.observable();
+
+            this.initialize(spec);
+        });
+
+        var vm = new ViewModel({
+            first: "Leland",
+            last: "Richardson",
+            username: "intelligiblebabble"
+        });
+
+        ko.applyBindings(vm)
+
+
+    </script>
+</body>
+</html>

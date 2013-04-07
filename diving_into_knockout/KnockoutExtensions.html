@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Knockout Extensions</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css" type="text/html"/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/knockout-2.2.1.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/knockout.validation.min.js"></script>
+
+    <script src="ko.extensions.js"></script>
+    <script src="ko.extensions.jquery.js"></script>
+    <script src="ko.extensions.bootstrap.js"></script>
+
+    <style type="text/css">
+        body {
+            text-align: center;;
+        }
+        section {
+            border: 1px solid #ccc;
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;;
+        }
+        section > h3 {
+            font-size: 18px;
+            line-height: 18px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            margin-top:0px;
+            padding-bottom: 4px;
+        }
+
+        .validationMessage {
+            color: Red;
+            display: block;
+            font-size: 10px;
+        }
+        .customMessage { color: Orange; }
+    </style>
+
+</head>
+<body>
+    <section id="dynamicValue">
+        <h3>dynamicValue Binding</h3>
+
+        <input type="text" data-bind="dynamicValue: label"/>
+        <div data-bind="text: label"></div>
+
+        <script>
+            (function(){
+                var vm = {
+                    label: ko.observable()
+                };
+                ko.applyBindings(vm, document.getElementById("dynamicValue"));;
+            })();
+        </script>
+
+    </section>
+
+    <section id="clickToEdit">
+        <h3>Click to Edit</h3>
+
+        <div data-bind="clickToEdit: label"></div>
+
+        <script>
+            (function(){
+                var vm = {
+                    label: ko.observable("Click me to edit!")
+                };
+                ko.applyBindings(vm, document.getElementById("clickToEdit"));;
+            })();
+        </script>
+    </section>
+
+    <section id="delegatedEvents">
+        <h3>Delegated Event Handling</h3>
+
+        <ul class="tasks" data-bind="foreach: tasks, on: { 'click .remove': removeTask}">
+            <li>
+                <span data-bind="text: name"></span>
+                <a href="#" class="remove">x</a>
+            </li>
+        </ul>
+
+        <script>
+            (function(){
+                var ViewModel = function() {
+                    this.tasks = ko.observableArray([
+                        {name: "Secure transportation", priority: "normal"},
+                        {name: "Retrieve blueprints", priority: "normal"},
+                        {name: "Get payment", priority: "high"}
+                    ]);
+                    this.removeTask = function(task) {
+                        this.tasks.remove(task);
+                    }.bind(this);
+                };
+
+                ko.applyBindings(new ViewModel(), document.getElementById("delegatedEvents"));;
+            })();
+        </script>
+    </section>
+
+    <section id="modalBinding">
+        <h3>Modal Binding</h3>
+
+        <div class="modal fade hide" data-bind="modal: selected">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">x</button>
+                <h3>Edit Record</h3>
+            </div>
+            <div class="modal-body">
+                <input data-bind="value: name"/>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+
+        <ul data-bind="foreach: missions">
+            <li><a href="#" data-bind="text: name, click: $parent.selected"></a></li>
+        </ul>
+
+        <script>
+            (function(){
+                ko.applyBindings({
+                    selected: ko.observable(),
+                    missions: [
+                        {name: ko.observable("Save the village")},
+                        {name: ko.observable("Stop the mobster")},
+                        {name: ko.observable("Rescue the children")}
+                    ]
+                }, document.getElementById("modalBinding"));
+            })();
+        </script>
+    </section>
+
+    <section id="progressBar">
+        <h3>Progress Bar</h3>
+
+        <div data-bind="progressBar: percentComplete"></div>
+
+        <script>
+            (function(){
+                var vm = {
+                    percentComplete: ko.observable(22)
+                };
+                ko.applyBindings(vm, document.getElementById("progressBar"));;
+            })();
+        </script>
+    </section>
+
+    <section id="validation">
+        <h3>Form Validation</h3>
+        <form data-bind="submit: submit">
+
+            <label>required: true</label>
+            <input type="text" data-bind="dynamicValue: property1"/>
+
+            <label>maxLength: 10</label>
+            <input type="text" data-bind="dynamicValue: property2"/>
+
+            <label>email: true</label>
+            <input type="text" data-bind="dynamicValue: property3"/>
+
+            <label>pattern: '^[a-zA-Z0-9]*$'</label>
+            <input type="text" data-bind="dynamicValue: property4"/>
+
+            <div></div>
+            <button type="submit">Submit</button>
+        </form>
+
+
+
+        <a href="https://github.com/ericmbarnard/Knockout-Validation">Read More on GitHub</a>
+        <script>
+            (function(){
+                var vm = ko.validatedObservable({
+                    property1: ko.observable().extend({ required: true }),
+                    property2: ko.observable('awid awid awiud aiwu d').extend({ maxLength: 10 }),
+                    property3: ko.observable().extend({ required: true, email: true }),
+                    property4: ko.observable().extend({ pattern: '^[a-zA-Z0-9]*$' }),
+                    property5: ko.observable().extend({ email: true }),
+
+
+                    submit: function(){
+                        if(vm.isValid()){
+                            alert("Success!");
+                        } else {
+                            vm.errors.showAllMessages();
+                        }
+                    }
+                });
+
+                ko.applyBindings(vm, document.getElementById("validation"));;
+            })();
+        </script>
+    </section>
+
+</body>
+</html>

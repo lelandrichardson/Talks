@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+<!--JQuery Version-->
+<section>
+
+    <div id="mission"></div><hr/>
+    <input id="missionEdit" type="text" />
+
+
+    <script>
+        var mission = {
+            name: "Free village",
+            risk: "High"
+        };
+
+        $("#mission").text(mission.name);
+        $("#missionEdit")
+            .val(mission.name)
+            .change(function(){
+                mission.name = this.value;
+                $("#mission").text(this.value);
+            });
+    </script>
+
+</section>
+
+<!--Simple KO version with no observables-->
+<section>
+    <div data-bind="text: name"></div><hr/>
+    <input data-bind="value: name" type="text" />
+
+    <script>
+        var mission = {
+            name: "Free village",
+            risk: "High"
+        };
+        ko.applyBindings(mission);
+    </script>
+</section>
+
+<section>
+    <div data-bind="text: name"></div><hr/>
+    <input data-bind="value: name" type="text" />
+
+    <script>
+        var mission = {
+            name: ko.observable("Free village"),
+            risk: "High"
+        };
+        ko.applyBindings(mission);
+    </script>
+</section>
+
+
+<section>
+    <div data-bind="text: name"></div><hr/>
+    <input data-bind="value: name" type="text" />
+
+    <script>
+        var mission = {
+            name: ko.observable("Free village"),
+            risk: "High"
+        };
+
+        mission.formatted = ko.computed(function() {
+            return mission.name() + '(' + mission.risk + ')';
+        });
+
+        ko.applyBindings(mission);
+    </script>
+</section>
+
+<section>
+
+    <input data-bind="value: name" type="text" /><hr/>
+    <select data-bind="options: riskChoices, value: risk"></select><hr/>
+    <div data-bind="text: formatted"></div>
+
+    <script>
+        var mission = {
+            name: ko.observable("Free village"),
+            riskChoices: ["Low","Medium","High"],
+            risk: ko.observable("High")
+        };
+
+        mission.formatted = ko.computed(function() {
+            return mission.name() + '(' + mission.risk() + ')';
+        });
+
+        ko.applyBindings(mission);
+    </script>
+
+    <script>
+
+        var Mission = function(spec) {
+            this.name = ko.observable(spec.name);
+            this.risk = ko.observable(spec.risk);
+            this.riskChoices = spec.choices;
+
+            this.formatted = ko.computed(function() {
+                return this.name() + '{' + this.risk() + ')';
+            }, this);
+        };
+
+        var riskChoices = ["Low","Medium","High"];
+        var mission = new Mission({
+            name: "Free Village",
+            risk: "High",
+            riskChoices: riskChoices
+        });
+
+        ko.applyBindings(mission);
+    </script>
+
+    <script>
+        var Mission = function(spec) {
+            this.name = ko.observable(spec.name);
+            this.risk = ko.observable(spec.risk);
+            this.formatted = ko.computed(this.getFormatted, this);
+        };
+
+        ko.utils.extend(Mission.prototype, {
+            riskChoices: ["Low","Medium","High"],
+            getFormatted: function() {
+                return this.name() + '(' + this.risk() + ')';
+            }
+        });
+
+
+        var mission = new Mission({
+            name: "Free Village",
+            risk: "High"
+        });
+        ko.applyBindings(mission);
+    </script>
+
+    <script>
+        var Mission = function(spec) {
+            this.name = ko.observable();
+            this.risk = ko.observable();
+
+            this.initialize(spec);
+            this.cleanData = spec;
+
+            this.formatted = ko.computed(this.getFormatted, this);
+        };
+
+        ko.utils.extend(Mission.prototype, {
+            riskChoices: ["Low","Medium","High"],
+            getFormatted: function() {
+                return this.name() + '(' + this.risk() + ')';
+            },
+            initialize: function(data) {
+                this.name(data.name);
+                this.risk(data.risk);
+            },
+            revert: function() {
+                this.initialize(this.cleanData);
+            },
+            toJSON: function() {
+                delete this.riskChoices;
+                delete this.formatted;
+                delete this.cleanData;
+
+                return this;
+            }
+        });
+
+
+        var mission = new Mission({
+            name: "Free Village",
+            risk: "High"
+        });
+        ko.applyBindings(mission);
+    </script>
+<!--Note: show ko.toJSON($root,null,2) trick-->
+
+
+</section>
+
+
+<section>
+    <input data-bind="value: username, valueUpdate: 'afterkeydown'"/>
+    <br>
+    <p class="error" data-bind="visible: hasError">Too Long!</p>
+
+
+    <script>
+        var Client = function() {
+            this.username = ko.observable("julie1");
+            this.hasError = ko.observable(false);
+
+            this.username.subscribe(function(newValue){
+                this.hasError(newValue && newValue.length > 10);
+            },this);
+        };
+
+        ko.applyBindings(new Client());
+    </script>
+
+    <script>
+        ko.observable.fn.maxLength = function(maxLength) {
+            var original = this,
+                hasError = ko.observable(),
+                result = ko.computed({
+                    read: original,
+                    write: function(newValue){
+                        hasError(newValue && newValue.length > maxLength);
+                        original(newValue);
+                    }
+                });
+            result.hasError = hasError;
+            return result;
+        };
+        ko.observableArray.fn.map = function(data, Ctor) {
+            var mapped = ko.utils.arrayMap(data,function(item){
+                return new Ctor(item);
+            });
+            this(mapped);
+            return this;
+        };
+        ko.observable.fn.focusable = function(val) {
+            this.focused = ko.observable(val);
+            return this;
+        };
+
+        var Client = function() {
+            this.username = ko.observable("julie1");
+            this.hasError = ko.observable(false);
+
+            this.username.subscribe(function(newValue){
+                this.hasError(newValue && newValue.length > 10);
+            },this);
+        };
+
+        var clientsFromServer = [/*..*/];
+        var ViewModel = function(clients) {
+            this.clients = ko.observableArray().map(clients,Client);
+        };
+
+        ko.applyBindings(new ViewModel(clientsFromServer));
+    </script>
+
+
+
+</section>
+
+
+<section>
+    <input data-bind="value: newSupply, enterKey: addSupply"/><hr/>
+    <button data-bind="click: addSupply">Add Supply</button><hr/>
+    <ul data-bind="foreach: supplies">
+        <li data-bind="text: $data"></li>
+    </ul>
+
+    <script>
+        ko.bindingHandlers.enterKey = {
+            init: function(event, valueAccesor, allBindings, data) {
+                var handler = function(data,event) {
+                    if(event.keyCode === 13) {
+                        valueAccessor().call(data, data, event);
+                    }
+                };
+                var newValueAccessor = function() {
+                    return {keyup: handler };
+                };
+                ko.bindingHandlers.event.init(element,valueAccessor,allBindings,data);
+            }
+        };
+
+        var ViewModel = function() {
+            this.newSupply = ko.observable();
+            this.supplies = ko.observableArray();
+            this.addSupply = function(data,event){
+                this.supplies.push(this.newSupply());
+            }
+        }
+    </script>
+
+</section>
+
+<section>
+    <input data-bind="value: name, tooltip: help" />
+    <input data-bind="value: name, tooltip: {title: help}" />
+    <input data-bind="value: name, tooltip: {title: help, trigger: 'hover'}" />
+
+    <script>
+        ko.bindingHandlers.tooltip = {
+            init: function(element,valueAccessor){
+                var local = ko.utils.unwrapObservable(valueAccessor()),
+                    options = {};
+                //provide a flexible API
+                if(typeof 'local' === 'string') {
+                    options.title = local;
+                } else {
+                    ko.utils.extend(options,ko.bindingHandlers.tooltip.options);
+                }
+                ko.utils.extend(options,local);
+
+                $(element).tooltip(options);
+
+                //advanced ->  plugin cleanup if necessary
+                ko.utils.domNodeDisposal.addDisposalCallback(element,function(){
+                    $(element).tooltip("destroy");
+                });
+            },
+            options: {
+                placement: "right",
+                trigger: "click"
+            }
+        };
+        var mission = {
+            name: ko.observable("Find the missing son"),
+            help: ko.observable("enter a summary of the mission")
+        };
+
+        ko.applyBindings(mission);
+
+    </script>
+
+
+</section>
+
+
+<section>
+
+    <div data-bind="with:selected">
+        <input data-bind="value: name"/>
+    </div>
+
+    <hr/>
+    <ul data-bind="foreach: missions">
+        <li><a href="#" data-bind="text: name, click: $parent.selected"></a></li>
+    </ul>
+
+    <script>
+        ko.applyBindings({
+            selected: ko.observable(),
+            missions: [
+                {name: ko.observable("Save the village")},
+                {name: ko.observable("Stop the mobster")},
+                {name: ko.observable("Rescue the children")}
+            ]
+        });
+
+
+    </script>
+</section>
+
+<section>
+
+    <div class="modal fade hide" data-bind="modal: selected">
+        <div class="modal-header">
+            <button class="close" data-dismiss="modal">x</button>
+            <h3>Edit Record</h3>
+        </div>
+        <div class="modal-body">
+            <input data-bind="value: name"/>
+        </div>
+        <div class="modal-footer">
+            <a href="#" data-dismiss="modal">Close</a>
+        </div>
+    </div>
+
+    <ul data-bind="foreach: missions">
+        <li><a href="#" data-bind="text: name, click: $parent.selected"></a></li>
+    </ul>
+
+    <script>
+        ko.bindingHandlers.modal = {
+            init: function(element, valueAccessor){
+                $(element).modal({show: false});
+                return ko.bindingHandlers.with.init.apply(this,arguments);
+            },
+            update: function(element, valueAccessor){
+                var value = ko.utils.unwrapObservable(valueAccessor());
+                $(element).modal(value ? "show" : "hide");
+                return ko.bindingHandlers.with.update.apply(this,arguments);
+            }
+        };
+
+        ko.applyBindings({
+            selected: ko.observable(),
+            missions: [
+                {name: ko.observable("Save the village")},
+                {name: ko.observable("Stop the mobster")},
+                {name: ko.observable("Rescue the children")}
+            ]
+        });
+
+
+    </script>
+</section>
+
+<!--Event Bindings....-->
+<section>
+
+    <ul class="tasks" data-bind="foreach: tasks">
+        <li>
+            <span data-bind="text: name"></span>
+            <a href="#" class="remove">x</a>
+        </li>
+    </ul>
+
+
+    <script>
+        var ViewModel = function() {
+            this.tasks = ko.observableArray([
+                {name: "Secure transportation", priority: "normal"},
+                {name: "Retrieve blueprints", priority: "normal"},
+                {name: "Get payment", priority: "high"}
+            ]);
+            this.removeTask = function(task) {
+                this.tasks.remove(task);
+            }.bind(this);
+        };
+
+        ko.applyBindings(new ViewModel());
+
+        $(".tasks").on("click",".remove",function(){
+            var context = ko.contextFor(this);
+            context.$parent.removeTask(content.$data);
+            event.preventDefault();
+        });
+    </script>
+</section>
+
+<!--Event Bindings - bindingHandler....-->
+<section>
+
+    <ul class="tasks" data-bind="foreach: tasks, on: { 'click .remove': remove}">
+        <li>
+            <span data-bind="text: name"></span>
+            <a href="#" class="remove">x</a>
+        </li>
+    </ul>
+
+
+    <script>
+
+        ko.bindingHandlers.on = {
+            init: function(element, valueAccessor){
+                var eventsToHandle = ko.utils.unwrapObservable(valueAccessor() || {});
+                ko.utils.objectForEach(eventsToHandle, function(key) {
+                    if (typeof key == "string") {
+                        var eventName = key.substr(0,key.indexOf(" ")),
+                            selector = key.substr(key.indexOf(" ") + 1);
+
+                        $(element).on(eventName, selector,function(event){
+                            var handlerReturnValue;
+                            var handlerFunction = valueAccessor()[eventName];
+                            if (!handlerFunction)
+                                return;
+                            var allBindings = allBindingsAccessor();
+
+                            try {
+                                // Take all the event args, and prefix with the viewmodel
+                                var argsForHandler = ko.utils.makeArray(arguments);
+                                argsForHandler.unshift(viewModel);
+                                handlerReturnValue = handlerFunction.apply(viewModel, argsForHandler);
+                            } finally {
+                                if (handlerReturnValue !== true) { // Normally we want to prevent default action. Developer can override this be explicitly returning true.
+                                    if (event.preventDefault)
+                                        event.preventDefault();
+                                    else
+                                        event.returnValue = false;
+                                }
+                            }
+                            //cancel bubbling by default
+                            event.cancelBubble = true;
+                            if (event.stopPropagation)
+                                event.stopPropagation();
+                        });
+                    }
+                });
+            }
+        }
+
+        var ViewModel = function() {
+            this.tasks = ko.observableArray([
+                {name: "Secure transportation", priority: "normal"},
+                {name: "Retrieve blueprints", priority: "normal"},
+                {name: "Get payment", priority: "high"}
+            ]);
+            this.removeTask = function(task) {
+                this.tasks.remove(task);
+            }.bind(this);
+        };
+
+        ko.applyBindings(new ViewModel());
+
+        $(".tasks").on("click",".remove",function(){
+            var context = ko.contextFor(this);
+            context.$parent.removeTask(content.$data);
+            event.preventDefault();
+        });
+    </script>
+</section>
+
+
+
+
+
+
+</body>
+</html>

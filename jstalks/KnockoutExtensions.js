@@ -1,36 +1,7 @@
 (function (ko, $) {
 
-    ko.bindingHandlers.clickToEdit = {
-        init: function(element, valueAccessor) {
-            var observable = valueAccessor(),
-                link = document.createElement("a"),
-                input = document.createElement("input");
-            element.appendChild(link);
-            element.appendChild(input);
 
-            observable.editing = ko.observable(false);
 
-            ko.applyBindingsToNode(link, {
-                text: observable,
-                hidden: observable.editing,
-                click: function() { observable.editing(true); }
-            });
-
-            ko.applyBindingsToNode(input, {
-                value: observable,
-                visible: observable.editing,
-                hasfocus: observable.editing
-            });
-
-        }
-    };
-
-    ko.bindingHandlers.stopBinding = {
-        init: function () {
-            return { controlsDescendantBindings: true };
-        }
-    };
-    ko.virtualElements.allowedBindings.stopBinding = true;
 
     $.fn.flash = function (highlightColor, duration) {
         var highlightBg = highlightColor || "#FFFF9C";
@@ -96,9 +67,7 @@
             $(element).children().remove();
             return ko.bindingHandlers.template.init(element, valueAccessor);
         },
-        update: function (element, valueAccessor, allBindingsAccessor, viewModel, bindingContext) {
-            return ko.bindingHandlers.template.update(element, valueAccessor, allBindingsAccessor, viewModel, bindingContext);
-        }
+        update: ko.bindingHandlers.template.update
     };
 
     ko.bindingHandlers.slideVisible = {
@@ -294,3 +263,4 @@
     };
 
 })(ko, jQuery);
+

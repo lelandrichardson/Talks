@@ -63,6 +63,14 @@ var chain = function(){
     };
 };
 
+
+Function.prototype.sequence=function(g) {
+    var f=this;
+    return function() {
+        f();g();
+    }
+};
+
 (function(){
     var a = function(hello){
         console.log(hello + " from a");
@@ -75,21 +83,69 @@ var chain = function(){
     //OR
 
     chain(a,b,a,b,a,b)();
-})
+    a.sequence(b).sequence(a);
+}());
 
-$.ajax({
-    url: "/mock/patient_get.json", //TODO: change to "/patients/" + id
-    type: "GET",
-    success: function(patient){/* ... */},
-    error: function(patient){ /* ... */}
+
+function Y(le) {
+    return (function (f) {
+        return f(f);
+    }(function (f) {
+        return le(function (x) {
+            return f(f)(x);
+        });
+    }));
+}
+
+var factorial = Y(function (fac) {
+    return function (n) {
+        return n <= 2 ? n : n * fac(n - 1);
+    };
 });
 
-$.ajax({
-    url: "/mock/patient_insert.json", //TODO: change to "/patients"
-    type: "GET", // TODO: change to "PUT"
-    success: function(patient){/* ... */},
-    error: function(patient){ /* ... */}
-});
+var number120 = factorial(5);
+
+
+
+
+function derivative(f){
+    return function(x){
+        return (f(x + 0.000001) - f(x))/0.000001;
+    };
+};
+
+
+
+
+
+
+
+
+
+
+function reduce(combine, base, array) {
+    forEach(array, function (element) {
+        base = combine(base, element);
+    });
+    return base;
+}
+
+function add(a, b) {
+    return a + b;
+}
+
+function sum(numbers) {
+    return reduce(add, 0, numbers);
+}
+
+
+
+
+
+
+
+
+
 
 
 
