@@ -45,34 +45,13 @@
             );
         },
         update: ko.bindingHandlers.value.update
-    }
+    };
 
     // hidden
     ko.bindingHandlers.hidden = {
         update: function (element, valueAccessor) {
             var value = ko.utils.unwrapObservable(valueAccessor());
             ko.bindingHandlers.visible.update(element, function () { return !value; });
-        }
-    };
-
-    // hasFocus
-    ko.bindingHandlers.hasFocus = {
-        init: function (element, valueAccessor) {
-            $(element).focus(function () {
-                var value = valueAccessor();
-                value(true);
-            });
-            $(element).blur(function () {
-                var value = valueAccessor();
-                value(false);
-            });
-        },
-        update: function (element, valueAccessor) {
-            var value = valueAccessor();
-            if (ko.utils.unwrapObservable(value))
-                element.focus();
-            else
-                element.blur();
         }
     };
 
@@ -146,7 +125,7 @@
                         vm[key] = model[key];
                     }
                 }
-            };
+            }
         }
     });
 

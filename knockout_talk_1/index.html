@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Diving Into Knockout.js - Leland Richardson</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="Leland Richardson">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!--For Live Coding-->
+    <link rel="stylesheet" type="text/css" href="css/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="css/rubyblue.css" />
+
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+        .reveal .slides section.present.live-code {
+            width: 1800px !important;
+            position:absolute;
+            left: -900px;
+        }
+        .reveal .slides > section.present.live-code {
+
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<section id="">
+    <h1>Diving Into Knockout.JS</h1>
+    <br>
+    <p>Leland Richardson</p>
+    <p>
+        <a href="http://twitter.com/intelligibabble">@intelligibabble</a>
+    </p>
+    <p>
+        <a href="http://tech.pro/leland">tech.pro/leland</a>
+    </p>
+    <br>
+    <p>
+        Follow Along: <a href="http://bit.ly/hackhackathons">bit.ly/divingintoknockout</a>
+    </p>
+
+    <aside class="notes">
+        I'm Leland Richardson
+        <br>
+        You can find me on twitter here
+        <br>
+        And I sometimes blog here.
+        <br>
+        Presentation is available here.
+        <br>
+        Going to talk about how to create web apps in very short period of time.
+        <br>
+        This can also extends to mobile apps, which I will get to later.
+    </aside>
+</section>
+
+<section class="live-code">
+
+    <div class="container-fluid">
+        <div id="content">
+            <div class="row-fluid">
+                <div class="span9">
+                    <div>
+                        <h3>HTML</h3>
+                        <div data-bind="htmlEditor: html"></div>
+                    </div>
+                    <div>
+                        <h3>JavaScript</h3>
+                        <div data-bind="jsEditor: js"></div>
+                    </div>
+                </div>
+
+                <div class="span3">
+                    <h3 data-bind="attr: { title: error }">Result</h3>
+                    <div class="sample" data-bind="sample: $data"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+</div>
+
+</div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script data-main="js/main" src="js/require.js"></script>
+</body>
+</html>
