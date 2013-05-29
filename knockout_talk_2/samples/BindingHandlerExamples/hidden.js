@@ -1,6 +1,6 @@
 ko.bindingHandlers.hidden = {
     update: function (element, valueAccessor) {
-        var value = ko.utils.unwrapObservable(valueAccessor());
+        var value = ko.unwrap(valueAccessor());
         ko.bindingHandlers.visible.update(element, function () {
             return !value;
         });

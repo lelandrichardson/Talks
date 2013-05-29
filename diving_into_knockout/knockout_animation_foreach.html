@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+
+<div>
+    <div data-bind="currency: money"></div>
+    <pre data-bind="toJSON: $root"></pre>
+</div>
+
+<ul data-bind="template: {
+    name: 'li_tmpl',
+    foreach: items,
+    afterRender: afterRender,
+    afterAdd: afterAdd,
+    beforeRemove: beforeRemove
+}">
+
+</ul>
+
+<script id="li_tmpl" type="text/html">
+    <li style="display:none;" data-bind="custom: true">
+        <div>This is a big div with a lot of text</div>
+        <div>This is a big div with a lot of text</div>
+        <div>This is a big div with a lot of text</div>
+        <div>This is a big div with a lot of text</div>
+        <div>This is a big div with a lot of text</div>
+    </li>
+</script>
+
+<script src="lib/knockout-2.2.1.js"></script>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/jquery-ui.min.js"></script>
+<script src="ko.extensions.jquery.js"></script>
+<script>
+
+    ko.bindingHandlers.custom = {
+        init: function(element, valueAccessor, allBIndingsAccessor, viewModel, context){
+            if(!viewModel.hasBeenRenderedOnce){
+                viewModel.hasBeenRenderedOnce = true;
+                $(element).slideDown('ease');
+            }
+        }
+    };
+
+    ko.bindingHandlers.currency = {
+        update: function(element, valueAccessor){
+            ko.bindingHandlers.text.update(element,function(){
+                var value = ko.utils.unwrapObservable(valueAccessor());
+                return (value || 0).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
+            });
+
+        }
+    };
+
+    ko.bindingHandlers.toJSON = {
+        update: function(element, valueAccessor){
+            ko.bindingHandlers.text.update(element,function(){
+                return ko.toJSON(valueAccessor(),null,2);
+            });
+        }
+    };
+
+    var viewModel = {
+        items: ko.observableArray([]),
+        money: 1234
+    };
+    viewModel.afterRender = function(elements){
+        console.log("afterRender: " + elements);
+        //setTimeout($(elements).slideDown(400),100);
+    };
+    viewModel.afterAdd = function(elements){
+        console.log("afterAdd: " + elements);
+    };
+    viewModel.beforeRemove = function(elements){
+        console.log("beforeRemove: " + elements);
+    };
+
+    ko.applyBindings(viewModel);
+
+</script>
+</body>
+</html>

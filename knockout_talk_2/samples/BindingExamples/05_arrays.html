@@ -1,0 +1,11 @@
+<h3 data-bind="text: name"></h3>
+<form data-bind="submit: add">
+    <input data-bind="value: next" placeholder="Add Ingredient"/>
+    <button type="submit">Add</button>
+    <hr/>
+</form>
+<ul data-bind="foreach: ingredients">
+    <li data-bind="text: $data"></li>
+</ul>
+
+<pre data-bind="toJSON: $root"></pre>

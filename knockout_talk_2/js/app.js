@@ -6,22 +6,27 @@
         this.sections = ko.observableArray([
             new Section({name: "Title", static: true}),
 
-            new Section({name: "WhatIsKnockoutJs", template: "meme"}),
+            new Section({name: "WhatIsKnockoutJs", template: "transition"}),
                 new Section({name: "LibraryVsFramework", template: "points"}),
                 new Section({name: "MVVM", template: "meme"}),
-                new Section({name: "ClassHierarchy", template: "meme"}),
                 new Section({name: "DeclarativeBindings", template: "meme"}),
+                new Section({name: "ClassHierarchy", template: "meme"}),
 
-            new Section({name: "HelloWorld", template: "meme"}), // TODO:
+            new Section({name: "HelloWorld", template: "meme"}),
                 new Section({name: "BindingExamples", template: "sample"}),
 
             new Section({name: "ApplicationStructure", template: "meme"}), // TODO:
                 new Section({name: "PatternExamples", template: "sample"}), // TODO:
 
-            new Section({name: "WorkingWithServer", template: "sample"}), // TODO:
-
             new Section({name: "CustomBindingHandlers", template: "points"}), // TODO:
                 new Section({name: "BindingHandlerExamples", template: "sample"}), // TODO:
+
+            new Section({name: "AdvancedUsage", template: "meme"}), // TODO:
+                new Section({name: "AdvancedExamples", template: "sample"}), // TODO:
+
+            new Section({name: "WorkingWithServer", template: "sample"}), // TODO:
+
+
 
 
 //            new Section("one", "sample"),

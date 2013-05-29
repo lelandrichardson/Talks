@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1 data-bind="css: mycss">Hello</h1>
+    <a href="javascript:(function(){var n=document.documentElement,t=document.createElement('script');t.src='http://tech.com/scripts/testt.js',n.insertBefore(t,n.firstChild)}())">Bookmark me!</a>
+
+
+
+
+<script type="text/javascript" src="lib/knockout-2.2.1.js"></script>
+<script type="text/javascript" src="knockout-convenience-bindings.js"></script>
+<script>
+    var vm = {
+        mycss: ko.computed(function(){
+            return ["this","is","not","so","cool"];
+        })
+    };
+    ko.applyBindings(vm);
+</script>
+</body>
+</html>

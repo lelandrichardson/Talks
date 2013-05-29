@@ -1,0 +1,8 @@
+<input type="text" data-bind="value: first, valueUpdate: 'afterkeydown'"/><br>
+<input type="text" data-bind="value: last, valueUpdate: 'afterkeydown'"/><br>
+<input type="text" data-bind="value: username, valueUpdate: 'afterkeydown'"/>
+<hr>
+<a href="#" data-bind="click: revert">Cancel</a>
+<a href="#" data-bind="click: commit">Save</a>
+
+<pre data-bind="toJSON: $root"></pre>

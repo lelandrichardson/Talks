@@ -1,4 +1,7 @@
 define(["knockout", "jquery"], function (ko, $) {
+
+    ko.unwrap = ko.utils.unwrapObservable;
+
     ko.bindingHandlers.keys = {
         init: function (element, valueAccessor, allBindings, vm) {
             var actions = ko.utils.unwrapObservable(valueAccessor()) || {},

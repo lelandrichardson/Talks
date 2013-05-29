@@ -11,6 +11,29 @@
 </head>
 <body>
 
+    <div id="mainApp">
+        <h3 data-bind="text: title"></h3>
+        <p data-bind="text: description"></p>
+    </div>
+    <div id="myWidget">
+        <span data-bind="click: beAwesome"></span>
+    </div>
+
+    <script>
+    var mainApp = {
+        title: "This is the application",
+        description: "I haz lotz of code"
+    };
+    ko.applyBindings(mainApp,document.getElementById("mainApp"));
+
+    var myWidget = {
+        beAwesome: function() {
+            alert("Sorry. You are not awesome :(");
+        }
+    };
+    ko.applyBindings(myWidget,document.getElementById("myWidget"));
+    </script>
+
     <div class="wmd-panel">
         <div id="wmd-button-bar">
             <ul id="wmd-button-row" class="wmd-button-row"></ul>

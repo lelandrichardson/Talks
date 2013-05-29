@@ -1,10 +1,9 @@
-var unwrap = ko.utils.unwrapObservable;
 ko.bindingHandlers.progressBar = {
     init: function(element,valueAccessor){
-        $(element).progressbar({ value: unwrap(valueAccessor())});
+        $(element).progressbar({ value: ko.unwrap(valueAccessor())});
     },
     update: function(element,valueAccessor){
-        $(element).progressbar("option","value",unwrap(valueAccessor()));
+        $(element).progressbar("option","value",ko.unwrap(valueAccessor()));
     }
 };
 var vm = {

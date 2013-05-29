@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="assets/autocomplete-0.2.1.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>AutoCompleteJS in Knockout</h1>
+    <div id="autocomplete" data-bind="autocomplete: {value: value, options: options}"></div>
+    <pre data-bind="html: ko.toJSON(value,null,2)"></pre>
+
+
+
+<script type="text/javascript" src="lib/knockout-2.2.1.js"></script>
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="lib/autocomplete-0.2.1.js"></script>
+<script>
+(function(){
+    var WIDGET_KEY = "ko__autocompletejs_widget";
+    var unwrap = ko.utils.unwrapObservable;
+    ko.bindingHandlers.autocomplete = {
+        init: function(element, valueAccessor){
+            var cfg = unwrap(valueAccessor()),
+                options = cfg.options,
+                value = cfg.value,
+                onchange = options.onChange || function(){};
+            options = ko.toJS(options);
+
+            options.onChange = function(newValue,oldValue){
+                if(value){
+                    value(newValue);
+                }
+                //call original handler if user passed it in
+                onchange(newValue,oldValue);
+            };
+
+            var ac = new AutoComplete(element,options);
+
+            ko.utils.domData.set(element, WIDGET_KEY, ac);
+
+        },
+        update: function(element, valueAccessor){
+            var ac = ko.utils.domData.get(element,WIDGET_KEY),
+                cfg = unwrap(valueAccessor());
+
+            ac.setValue(unwrap(cfg.value));
+        }
+    };
+})();
+
+    var viewModel = {
+        value: ko.observable(),
+        options: {
+            initialList: 'foods',
+            lists: {
+                foods: [
+                    { value: 'Fruits', children: 'fruits' },
+                    { value: 'Meats', children: 'meats' },
+                    { value: 'Vegetables', children: 'vegetables' }
+                ],
+                fruits: ['Apple', 'Banana', 'Orange'],
+                meats: ['Beef', 'Chicken', 'Pork'],
+                vegetables: ['Carrot', 'Lettuce', 'Onion']
+            }
+        }
+    };
+
+    ko.applyBindings(viewModel);
+
+</script>
+</body>
+</html>

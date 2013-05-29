@@ -24,7 +24,14 @@ function(ko) {
                 html = sample.html(),
                 js = sample.js();
 
-            ko.applyBindings = function(vm) {
+            ko.applyBindings = function(vm,attemptedContainer) {
+                if(attemptedContainer){
+                    var $newContainer = $(attemptedContainer,container);
+                    if($newContainer.length>0){
+                        realApply(vm, $newContainer[0]);
+                        return;
+                    }
+                }
                 realApply(vm, container);
             };
 
@@ -33,6 +40,12 @@ function(ko) {
             //hack to add some bootstrap style to our elements, without polluting examples
             $(container).find("button").addClass("btn");
             $(container).find("input").addClass("input");
+
+//            $(container).find("input").each(function(){
+//                if(!$(this).attr("type")){
+//                    this.type = "text";
+//                }
+//            });
 
             try {
                 //avoid extra dependencies
@@ -130,9 +143,11 @@ function(ko) {
         this.js = null;
         //this.css = null;
 
-        this.showHtml = !options.hideHtml;
-        this.showJs = !options.hideJs;
-        this.showResult = !options.hideResult;
+        this.showHtml = ko.observable(!options.hideHtml);
+        this.showJs = ko.observable(!options.hideJs);
+        this.showResult = ko.observable(!options.hideResult);
+
+        this.noHtmlNeeded = !!options.noHtmlNeeded;
 
         this.forceLoad = options.forceLoad;
         this.loadAsSection = options.loadAsSection;
@@ -169,7 +184,11 @@ function(ko) {
                 path = "../",
                 key = "samples/" + self.key + "/" + current.key;
 
-            require(["text!" + path + key + ".html", (current.loadAsSection ? "" : "text!" + path) + key + ".js"], function(html, js) {
+
+            require([
+                !current.noHtmlNeeded ? "text!" + path + key + ".html" : "text!../samples/null_html.html",
+                (current.loadAsSection ? "" : "text!" + path) + key + ".js"
+            ], function(html, js) {
                 current.html = html;
                 current.js = (js || "").toString();
 

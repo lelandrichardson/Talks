@@ -14,7 +14,7 @@
     <a href="#" data-bind="click: revert">Cancel</a>
     <a href="#" data-bind="click: commit">Save</a>
 
-    <pre data-bind="text: ko.toJSON.call(null,$root,null,2)"></pre>
+    <pre data-bind="toJSON: $root"></pre>
 
 
     <script>

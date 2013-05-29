@@ -6,7 +6,8 @@ require.config({
         "jquery-ui": "ext/jquery-ui.min",
         "text": "ext/text",
         "codemirror": "ext/codemirror",
-        "bootstrap": "ext/bootstrap.min"
+        "bootstrap": "ext/bootstrap.min",
+        "extensions": "../ko.extensions"
     },
     shim: {
         "bootstrap": ["jquery"]
@@ -21,7 +22,7 @@ require([
     "utilities",
     "stringTemplateEngine",
     "text",
-    "codemirror"
+    "codemirror",
 ],
 function(ko, App, $) {
     var vm = new App();
@@ -48,9 +49,46 @@ function(ko, App, $) {
         }
     });
 
-    window.alert = function(text) {
-      $("#alert .modal-body").html("<p>" + text + "</p>").parent().modal();
+    window.alert = function(textOrObject) {
+        var inner;
+        if(typeof textOrObject === "string"){
+            inner = $("<div>").append($("<p>").text(textOrObject)).html();
+        } else {
+            inner = $("<div>").append($("<pre>").text(ko.toJSON(textOrObject,null,2))).html();
+        }
+        $("#alert .modal-body").html(inner).parent().modal();
     };
+
+
+    //EXPOSE GLOBALS:
+    window.extend = $.extend,
+    window.each = $.each;
+    window.POST_OPTIONS = {
+        contentType: 'application/json; charset=UTF-8',
+        dataType: 'json',
+        processData: false,
+        type: 'POST'
+    };
+    window.extend(window,{
+        AJAX: $.ajax,
+        GET_OPTIONS: extend(POST_OPTIONS,{type:'GET'}),
+        PUT_OPTIONS: extend(POST_OPTIONS,{type:'PUT'}),
+        DELETE_OPTIONS: extend(POST_OPTIONS,{type:'DELETE'}),
+        POST: function(cfg){
+            return AJAX(extend(POST_OPTIONS,cfg));
+        },
+        GET: function(cfg){
+            return AJAX(extend(GET_OPTIONS,cfg));
+        },
+        PUT: function(cfg){
+            return AJAX(extend(PUT_OPTIONS,cfg));
+        },
+        DELETE: function(cfg){
+            return AJAX(extend(DELETE_OPTIONS,cfg));
+        }
+    });
+
+
 
     ko.applyBindings(vm);
 });
