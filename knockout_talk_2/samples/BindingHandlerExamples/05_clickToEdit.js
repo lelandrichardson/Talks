@@ -19,6 +19,6 @@ ko.bindingHandlers.clickToEdit = {
             visible: observable.editing,
             hasfocus: observable.editing
         });
-
     }
 };
+ko.applyBindings({value: ko.observable("Click me to Edit!")});

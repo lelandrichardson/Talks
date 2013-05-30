@@ -7,10 +7,12 @@ require.config({
         "text": "ext/text",
         "codemirror": "ext/codemirror",
         "bootstrap": "ext/bootstrap.min",
-        "extensions": "../ko.extensions"
+        "extensions": "../ko.extensions",
+        "oftype": "knockout-array-oftype"
     },
     shim: {
-        "bootstrap": ["jquery"]
+        "bootstrap": ["jquery"],
+        "oftype": ["knockout"]
     }
 });
 
@@ -23,6 +25,8 @@ require([
     "stringTemplateEngine",
     "text",
     "codemirror",
+    "oftype",
+    "ext/Markdown.Converter"
 ],
 function(ko, App, $) {
     var vm = new App();

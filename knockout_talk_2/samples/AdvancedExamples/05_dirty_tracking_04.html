@@ -1,0 +1,13 @@
+<b>Name: </b><input data-bind="dynamicValue: name"/><br/>
+<b>Rating: </b><input data-bind="dynamicValue: rating"/><br/>
+<hr>
+<form data-bind="submit: ingredients.add">
+    <input data-bind="value: ingredients.next" placeholder="Add Ingredient"/>
+    <button type="submit">Add</button>
+    <hr/>
+</form>
+<ul data-bind="foreach: ingredients">
+    <li data-bind="text: $data, click: $parent.remove"></li>
+</ul>
+
+<h3>Model is <span data-bind="text: dirtyFlag.isDirty() ? 'Dirty' : 'Clean'"></span></h3>

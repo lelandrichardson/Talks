@@ -1,4 +1,4 @@
-var converter  = Markdown.getSanitizingConverter();
+var converter = new Markdown.Converter();
 ko.bindingHandlers.markdown = {
     init: function (element, valueAccessor, allBindingsAccessor) {
 

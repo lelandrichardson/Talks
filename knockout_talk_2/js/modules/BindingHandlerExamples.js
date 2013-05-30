@@ -2,7 +2,9 @@ define([
     "knockout",
     "sample",
     "jquery",
-    "jquery-ui"
+    "jquery-ui",
+    "../ko.extensions",
+    "ext/Markdown.Converter"
 ],
 function(ko, Sample, $) {
 
@@ -10,43 +12,44 @@ function(ko, Sample, $) {
         new Sample.State("API","01_api", {hideResult: true}),
 
         //TODO: show html with value: a, valueUpdate: 'afterkeydown'
-        new Sample.State("Augment Existing Handlers","02_dynamicValue", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
-        new Sample.State("Augment Existing Handlers","03_dynamicValue", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
+        //NOTE: first time you did this, you forgot to show this earlier in the talk...
+        new Sample.State("Augment Existing Handlers","02_dynamicValue", { hideResult: false, hideHtml: false}),
+        new Sample.State("Augment Existing Handlers","03_dynamicValue", { hideResult: false, hideHtml: false}),
 
 
         //TODO: maybe sneak in some other "convenience" bindings in here already typed out just to show
         //TODO: what you can do
 
-        //TODO: start off with a viewModel with computed...
-        //TODO: talk about how this is more the view's job, not the view model's
-        new Sample.State("Common UI Formatting","08_currency", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
-        new Sample.State("Common UI Formatting","09_currency", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
+        new Sample.State("Common UI Formatting","08_currency_01", { hideResult: false, hideHtml: true}),
+        new Sample.State("Common UI Formatting","08_currency", { hideResult: true, hideHtml: true, noHtmlNeeded: false }),
+        new Sample.State("Common UI Formatting","09_currency", { hideResult: true, hideHtml: true, noHtmlNeeded: false }),
 
-        new Sample.State("Useful Helpers","10_toJSON", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
-        new Sample.State("Useful Helpers","11_toJSON", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
+        new Sample.State("Useful Helpers","10_toJSON", { hideResult: true, hideHtml: true, noHtmlNeeded: false }),
+        new Sample.State("Useful Helpers","11_toJSON", { hideResult: true, hideHtml: true, noHtmlNeeded: false }),
 
-        new Sample.State("Existing Libraries/Plugins","12_date", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
-        new Sample.State("Existing Libraries/Plugins","13_date", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
+        new Sample.State("Formatting Dates","12_date", { hideResult: true, hideHtml: true, noHtmlNeeded: false }),
+        new Sample.State("Formatting Dates","13_date", { hideResult: true, hideHtml: true, noHtmlNeeded: false }),
 
-        new Sample.State("Existing Libraries/Plugins","06_progressBar", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
-        new Sample.State("Existing Libraries/Plugins","07_progressBar", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
+        new Sample.State("Existing Libraries/Plugins","06_progressBar", { hideResult: true, hideHtml: true, noHtmlNeeded: false }),
+        new Sample.State("Existing Libraries/Plugins","07_progressBar", { hideResult: true, hideHtml: true, noHtmlNeeded: false }),
 
-        new Sample.State("Existing Libraries/Plugins","14_markdown", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
-        new Sample.State("Existing Libraries/Plugins","15_markdown", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
+        new Sample.State("Existing Libraries/Plugins","14_markdown", { hideResult: true, hideHtml: true, noHtmlNeeded: false }),
+        new Sample.State("Existing Libraries/Plugins","15_markdown", { hideResult: true, hideHtml: true, noHtmlNeeded: false }),
 
+        //TODO: do we need? if so, create an HTML beginning/start for it.
         new Sample.State("Existing Libraries/Plugins","16_autocomplete", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
         new Sample.State("Existing Libraries/Plugins","17_autocomplete", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
 
-        //TODO: start out with the full HTML markup of this viewmodel
-        new Sample.State("More Complex Widgets","04_clickToEdit", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
-        new Sample.State("More Complex Widgets","05_clickToEdit", { hideResult: true, hideHtml: true, noHtmlNeeded: true }),
+        new Sample.State("More Complex Widgets","04_clickToEdit_01", { hideResult: false, hideHtml: false, noHtmlNeeded: false }),
+        new Sample.State("More Complex Widgets","04_clickToEdit", { hideResult: false, hideHtml: false, noHtmlNeeded: false }),
+        new Sample.State("More Complex Widgets","05_clickToEdit", { hideResult: false, hideHtml: false, noHtmlNeeded: false }),
 
 
 
-        new Sample.State("Utilize Existing Handlers","dynamicValue"),
-        new Sample.State("Utilize Existing Handlers","hidden"),
-        new Sample.State("Create and Handle Child nodes","clickToEdit"),
-        new Sample.State("Utilize other plugins / libraries easily","progressbar"),
+//        new Sample.State("Utilize Existing Handlers","dynamicValue"),
+//        new Sample.State("Utilize Existing Handlers","hidden"),
+//        new Sample.State("Create and Handle Child nodes","clickToEdit"),
+//        new Sample.State("Utilize other plugins / libraries easily","progressbar"),
 
 
     ], true);  //this last true tells it to load each sample immediately when moving to it

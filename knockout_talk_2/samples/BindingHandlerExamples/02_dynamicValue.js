@@ -6,3 +6,4 @@ ko.bindingHandlers.dynamicValue = {
 
     }
 };
+ko.applyBindings({data: ko.observable("text")});

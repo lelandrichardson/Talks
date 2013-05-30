@@ -8,3 +8,8 @@ if($.fn.progressbar){
         }
     }
 }
+var vm = {
+    complete: ko.observable(22),
+    increment: function() {this.complete(this.complete()+1);}
+};
+ko.applyBindings(vm);

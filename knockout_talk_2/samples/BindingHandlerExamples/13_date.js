@@ -9,6 +9,6 @@ if($.datepicker){
                     return $.datepicker.formatDate(dateFormat, date);
             });
         },
-        defaultFormat: 'mm-dd-yyyy'
+        defaultFormat: 'mm-dd-yy'
     };
 }

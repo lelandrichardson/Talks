@@ -15,23 +15,20 @@
             new Section({name: "HelloWorld", template: "meme"}),
                 new Section({name: "BindingExamples", template: "sample"}),
 
-            new Section({name: "ApplicationStructure", template: "meme"}), // TODO:
-                new Section({name: "PatternExamples", template: "sample"}), // TODO:
+            new Section({name: "ApplicationStructure", template: "meme"}),
+                new Section({name: "PatternExamples", template: "sample"}),
 
-            new Section({name: "CustomBindingHandlers", template: "points"}), // TODO:
-                new Section({name: "BindingHandlerExamples", template: "sample"}), // TODO:
+            new Section({name: "CustomBindingHandlers", template: "points"}),
+                new Section({name: "BindingHandlerExamples", template: "sample"}),
 
-            new Section({name: "AdvancedUsage", template: "meme"}), // TODO:
-                new Section({name: "AdvancedExamples", template: "sample"}), // TODO:
+            new Section({name: "AdvancedUsage", template: "meme"}),
+                new Section({name: "AdvancedExamples", template: "sample"}),
 
-            new Section({name: "WorkingWithServer", template: "sample"}), // TODO:
-
-
+            new Section({name: "WorkingWithServer", template: "sample"}),
 
 
-//            new Section("one", "sample"),
-//            new Section("two", "sample"),
-//            new Section("bye")
+
+
         ]);
 
         this.updateSection = function(name) {

@@ -6,3 +6,4 @@ ko.bindingHandlers.clickToEdit = {
 
     }
 };
+ko.applyBindings({value: ko.observable("Click me to Edit!")});

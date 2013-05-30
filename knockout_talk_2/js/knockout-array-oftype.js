@@ -1,4 +1,4 @@
-(function(ko){
+define(["knockout"], function(ko){
 
     var ctorKey = '__ko_typed_array_ctor__',
         toArray = function(args){
@@ -77,4 +77,4 @@
         return interceptor;
     };
 
-})(window.ko);
+});
