@@ -12,6 +12,38 @@ h2
     text-shadow: black 1px 1px 2px;
 }
 
+.outline {
+    font-size:20px;
+    line-height: 24px;
+}
+
+.outline-large li {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom:20px;
+}
+.outline > ul {
+
+}
+.outline > ul > li {
+    color:#333;
+    font-weight: bold;
+    font-size:32px;
+    line-height: 36px;
+}
+.outline > ul > li > ul {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.outline > ul > li > ul > li {
+    color: #555;
+    font-weight: bold;
+    font-size:24px;
+    line-height: 26px;
+
+}
+
+
 .center
 {
     text-align: center;

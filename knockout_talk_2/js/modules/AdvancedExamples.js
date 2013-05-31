@@ -7,7 +7,7 @@ define([
 ],
 function(ko, Sample, $) {
 
-    return new Sample("Advanced Usage", "AdvancedExamples", [
+    return new Sample("Extending Knockout", "AdvancedExamples", [
 
 
 

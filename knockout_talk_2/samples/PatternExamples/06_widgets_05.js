@@ -7,8 +7,8 @@ ko.applyBindings(mainApp, document.getElementById("mainApp"));
 // .......
 
 var myWidget = {
-    beAwesome: function() {
-        alert("Yes! I am awesome!");
+    doStuff: function() {
+        alert("I worked!");
     }
 };
 ko.applyBindings(myWidget, document.getElementById("myWidget"));

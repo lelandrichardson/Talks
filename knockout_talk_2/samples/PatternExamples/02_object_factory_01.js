@@ -5,7 +5,7 @@ var cocktailFactory = function(spec){
     that.type = ko.observable(spec.type);
     that.rating = spec.rating;
     that.heading = ko.computed(function(){
-        return that.name() + " (" + that.type() + ', ' + that.rating + "/5)";;
+        return that.name() + " (" + that.type() + ', ' + that.rating + "/5)";
     });
     return that;
 };

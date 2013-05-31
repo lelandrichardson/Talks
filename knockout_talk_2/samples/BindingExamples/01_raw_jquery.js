@@ -1,4 +1,4 @@
 var cocktail = {
-    name: "Gin and Tonic",
+    name: "Gin & Tonic",
     rating: 9.5
 };
