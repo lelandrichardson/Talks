@@ -2,48 +2,123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/knockout_talk_2/js/modules/AdvancedUsage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/knockout_talk_2/templates/FinishingPoints.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/knockout_talk_2/templates/Outline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/knockout_talk_2/templates/ThankYou.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/01_pojo_01.js" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/01_pojo_01.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/01_pojo_02.js" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/01_pojo_02.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/01_raw_jquery.js" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/01_raw_jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/02_object_factory_01.js" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/02_object_factory_01.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/02_raw_jquery.js" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/02_raw_jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/05_arrays.html" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/05_arrays.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_02.html" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_02.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_02.js" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_02.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_03.html" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_03.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_03.js" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_03.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_05.html" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_05.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_05.js" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_05.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/js/modules/AdvancedExamples.js" afterPath="$PROJECT_DIR$/knockout_talk_2/js/modules/AdvancedExamples.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/js/modules/ApplicationStructure.js" afterPath="$PROJECT_DIR$/knockout_talk_2/js/modules/ApplicationStructure.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/js/modules/ClassHierarchy.js" afterPath="$PROJECT_DIR$/knockout_talk_2/js/modules/ClassHierarchy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/js/modules/DeclarativeBindings.js" afterPath="$PROJECT_DIR$/knockout_talk_2/js/modules/DeclarativeBindings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/js/modules/HelloWorld.js" afterPath="$PROJECT_DIR$/knockout_talk_2/js/modules/HelloWorld.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/js/modules/MVVM.js" afterPath="$PROJECT_DIR$/knockout_talk_2/js/modules/MVVM.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/css/app.css" afterPath="$PROJECT_DIR$/knockout_talk_2/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/js/app.js" afterPath="$PROJECT_DIR$/knockout_talk_2/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/templates/meme.html" afterPath="$PROJECT_DIR$/knockout_talk_2/templates/meme.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/balsamiq_components.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/hipster_hacker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/javascript_all_the_things.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/js_new_way.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/js_old_way.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/kendo_ui_mobile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/lib/font/league_gothic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/lib/font/league_gothic-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/lib/font/league_gothic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/nailed_it.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/never-half-ass-two-things-whole-ass-one-thing.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/static_typing_and_database_schemas.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/that_vc_money_is_mine.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/this_was_all_just_a_demo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/two_days_to_build_anything.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/using_sql_as_a_grownup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/imgs/why-pidoco.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/beige.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/source/beige.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/lib/js/classList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/multiplex/client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/notes-server/client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/diving_into_knockout/connection_test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/source/default.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/markdown/example.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/postmessage/example.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/markdown/example.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/example_index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/example_stubs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/examples.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/examples.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/functional.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/functional.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/lib/js/head.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/highlight/highlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/lib/js/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/multiplex/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/notes-server/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playground/lib/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playground/ko-components.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playground/ko-components.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/lib/font/league_gothic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/lib/font/league_gothic_license" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/markdown/markdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/multiplex/master.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/template/mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/moon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/source/moon.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/night.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/source/night.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/notes/notes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/notes-server/notes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/notes/notes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/print/paper.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/print/pdf.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/postmessage/postmessage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/print-pdf/print-pdf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/progressions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/remotes/remotes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/reveal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/js/reveal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/reveal.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/js/reveal.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/search/search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/serif.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/source/serif.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/template/settings.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/markdown/showdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/simple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/source/simple.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/sky.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/source/sky.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/solarized.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/source/solarized.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/css/theme/template/theme.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/to-function.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/underscore-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/ext/underscore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/lib/css/zenburn.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functional_javascript/plugin/zoom-js/zoom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/samples/AdvancedExamples/02_matchpattern_04.js" afterPath="$PROJECT_DIR$/knockout_talk_2/samples/AdvancedExamples/02_matchpattern_04.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functional_javascript/fn_js.md" afterPath="$PROJECT_DIR$/functional_javascript/fn_js.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/notes.md" afterPath="$PROJECT_DIR$/knockout_talk_2/notes.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functional_javascript/playground.js" afterPath="$PROJECT_DIR$/functional_javascript/playground.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/knockout_talk_2/sample_code.js" afterPath="$PROJECT_DIR$/knockout_talk_2/sample_code.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="talks.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369944024343" ignored="false" />
-    <file path="/namespace.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1366611377258" ignored="false" />
+    <file path="/Dummy.txt" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1391798867045" ignored="false" />
+    <file path="/namespace.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370074307621" ignored="false" />
     <file path="$PROJECT_DIR$/../knockout/src/namespace.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1366611379455" ignored="false" />
     <file path="/knockout-convenience-bindings.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1366786085680" ignored="false" />
     <file path="/convenience_bindings.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1366794181349" ignored="false" />
     <file path="/JobsApi.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1367300669765" ignored="false" />
     <file path="/modal_stuff.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1367618246998" ignored="false" />
     <file path="/ko.extensions.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369879210712" ignored="false" />
-    <file path="/sample_code.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1368421166719" ignored="false" />
+    <file path="/sample_code.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1373520068979" ignored="false" />
     <file path="/knockout-autocomplete.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1368208543248" ignored="false" />
     <file path="/MarkdownEditorExample.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1368080421265" ignored="false" />
     <file path="/jobs.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1368135718724" ignored="false" />
-    <file path="/playground.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1368428525814" ignored="false" />
+    <file path="/playground.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370071300964" ignored="false" />
     <file path="/ko.extensions.jquery.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1368909898707" ignored="false" />
     <file path="/knockout_animation_foreach.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1368908715130" ignored="false" />
     <file path="/knockout-ajax.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1368929723429" ignored="false" />
@@ -75,8 +150,8 @@
     <file path="/sample.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369866219633" ignored="false" />
     <file path="/PatternExamples.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369875459206" ignored="false" />
     <file path="/null_html.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369878082551" ignored="false" />
-    <file path="/utilities.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369067465168" ignored="false" />
-    <file path="/a.dummy" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369864079629" ignored="false" />
+    <file path="/utilities.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370123720430" ignored="false" />
+    <file path="/a.dummy" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1373518551177" ignored="false" />
     <file path="/07_progressBar.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369067566387" ignored="false" />
     <file path="/09_currency.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369067583994" ignored="false" />
     <file path="/13_date.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369591066548" ignored="false" />
@@ -84,14 +159,14 @@
     <file path="/17_autocomplete.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369077961146" ignored="false" />
     <file path="/hidden.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369077979472" ignored="false" />
     <file path="/progressbar.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369078064568" ignored="false" />
-    <file path="/sample.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369791765128" ignored="false" />
+    <file path="/sample.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1380335086105" ignored="false" />
     <file path="/main.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369876578343" ignored="false" />
     <file path="/02_pojo.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369795355033" ignored="false" />
     <file path="/02_pojo.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369865322867" ignored="false" />
     <file path="$PROJECT_DIR$/../knockout/src/subscribables/observableArray.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369800081615" ignored="false" />
-    <file path="/knockout-array-oftype.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369863702593" ignored="false" />
+    <file path="/knockout-array-oftype.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1373526448943" ignored="false" />
     <file path="/oftyped_array.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369804014193" ignored="false" />
-    <file path="/index.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369886211851" ignored="false" />
+    <file path="/index.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370557752833" ignored="false" />
     <file path="/10_widgets.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369866846973" ignored="false" />
     <file path="/05_collections_02.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369868624677" ignored="false" />
     <file path="/05_collections_07.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369868896323" ignored="false" />
@@ -143,6 +218,96 @@
     <file path="/06_widgets_03.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369954326045" ignored="false" />
     <file path="/06_widgets_03.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369954348776" ignored="false" />
     <file path="/06_widgets_05.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369954375222" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/.gitignore" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369972549385" ignored="false" />
+    <file path="/.gitignore" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1373526491677" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/knuckles.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370072707503" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/stopBinding.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369974984227" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/dynamicValue.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975018805" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/hidden.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975048180" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/keyBindings.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975085305" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/timeAgo.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975223573" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/currency.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975296148" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/toJSON.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975328016" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/extensions/asPositiveInteger.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975372769" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/extensions/on.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975398740" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/on.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975445354" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/$sortable.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975509905" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/$progressBar.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975542138" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/date.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975574943" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/observableArray-extensions/ofType.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370226111895" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/_convenience-bindings.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975745052" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/keys.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369975879286" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/models/restify.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369976033788" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/observableArray-extensions/asPaged.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369976705931" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/observable-extensions/ofPattern.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369979190545" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/observable-extensions/withoutPattern.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1369979210915" ignored="false" />
+    <file path="/knuckles.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370072630002" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/services/$ajax.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370072187036" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/utilities.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370123880570" ignored="false" />
+    <file path="/$ajax.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370072153221" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/services/$promise.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370072360331" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/services/$timeout.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370072371533" ignored="false" />
+    <file path="$PROJECT_DIR$/../backbone/backbone.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370072641059" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/build/build.sh" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370122689688" ignored="false" />
+    <file path="/build.sh" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370122689688" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/build/fragments/amd-pre.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370123053251" ignored="false" />
+    <file path="/amd-pre.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370122995454" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/build/fragments/source-references.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370222120329" ignored="false" />
+    <file path="/source-references.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370074073280" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/build/fragments/version-header.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370074110332" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/build/knockout-raw.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370109717541" ignored="false" />
+    <file path="/knockout-raw.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370074164184" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/namespace.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370123237200" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/google-closure-compiler-utils.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370074410656" ignored="false" />
+    <file path="/google-closure-compiler-utils.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370074410656" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/version.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370074458466" ignored="false" />
+    <file path="/version.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370074458466" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/package.json" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370075161608" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/spec/runner.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370075253436" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/spec/runner.node.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370108986506" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/build/output/knuckles-latest.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370226881644" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/build/output/knuckles-latest.debug.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370226881644" ignored="false" />
+    <file path="$PROJECT_DIR$/../knockout/build/fragments/amd-pre.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370123046624" ignored="false" />
+    <file path="$PROJECT_DIR$/../knockout/build/fragments/source-references.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370123506144" ignored="false" />
+    <file path="$PROJECT_DIR$/../knockout/build/output/knockout-latest.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370123474760" ignored="false" />
+    <file path="$PROJECT_DIR$/../knockout/build/output/knockout-latest.debug.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370123474760" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/module-scope.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370222470517" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/services/jqhttp.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370215091370" ignored="false" />
+    <file path="/jqhttp.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370215088739" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/module.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370226910704" ignored="false" />
+    <file path="/module.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370226908566" ignored="false" />
+    <file path="/module-scope.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370217626493" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/utilities/mapping.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370217688892" ignored="false" />
+    <file path="/mapping.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370217687621" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/services/bind.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370221353781" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/spec/debug.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370222843216" ignored="false" />
+    <file path="/debug.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370228171308" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/services/localStorage.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370221317783" ignored="false" />
+    <file path="/localStorage.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370220190345" ignored="false" />
+    <file path="/bind.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370221352267" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/observableArray-extensions/filter.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370222699210" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/spec/todoMVC/debug.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370227135432" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/spec/todoMVC/base.css" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370222982019" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/utility/keys.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370223192254" ignored="false" />
+    <file path="/keys.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370223178572" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/src/binding-handlers/utility/keyBindings.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370223538230" ignored="false" />
+    <file path="/ofType.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370225962981" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/spec/todoMVC/app.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370228155684" ignored="false" />
+    <file path="$PROJECT_DIR$/../knuckles.js/spec/todoMVC/index.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370228175378" ignored="false" />
+    <file path="$PROJECT_DIR$/../knockout-paged/test_json/LICENSE.md" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370228645578" ignored="false" />
+    <file path="/LICENSE.md" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370228645578" ignored="false" />
+    <file path="$PROJECT_DIR$/../knockout-paged/knockout-paged.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370230847474" ignored="false" />
+    <file path="$PROJECT_DIR$/../knockout-paged/README.md" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370230761522" ignored="false" />
+    <file path="$PROJECT_DIR$/../knockout-paged/index.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370229811515" ignored="false" />
+    <file path="/README.md" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370230746666" ignored="false" />
+    <file path="/progressions.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370549967616" ignored="false" />
+    <file path="/examples.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370539015112" ignored="false" />
+    <file path="/example_stubs.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1370554174762" ignored="false" />
+    <file path="/connection_test.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1371054377280" ignored="false" />
+    <file path="$PROJECT_DIR$/../knockout-oftype/knockout-array-oftype.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1373526448942" ignored="false" />
+    <file path="$PROJECT_DIR$/../knockout-oftype/.gitignore" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1373526539473" ignored="false" />
+    <file path="/ko-components.html" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1390808468398" ignored="false" />
+    <file path="/ko-components.js" changelist="37ab81b4-4ce9-4d29-b8ba-2b8016e0a869" time="1390808294280" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,98 +326,34 @@
     <favorites_list name="talks" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="01_pojo_01.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/01_pojo_01.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="15" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02_object_factory_01.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/02_object_factory_01.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="2" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06_widgets_01.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_01.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06_widgets_01.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_01.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06_widgets_02.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_02.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="6" selection-start="191" selection-end="191" vertical-scroll-proportion="-3.9230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06_widgets_05.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_05.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="52" selection-start="216" selection-end="216" vertical-scroll-proportion="-3.9230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06_widgets_05.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_05.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="64" selection-start="315" selection-end="315" vertical-scroll-proportion="0.46723044">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06_widgets_02.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_02.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="25" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06_widgets_03.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_03.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="52" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.2692308">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06_widgets_03.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_03.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="5" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="ko-components.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/playground/ko-components.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="38" column="4" selection-start="726" selection-end="726" vertical-scroll-proportion="0.7546729">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="ko-components.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/playground/ko-components.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="16" column="16" selection-start="411" selection-end="411" vertical-scroll-proportion="0.019562716">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -270,30 +371,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/knockout_talk_2/js/app.js" />
-        <option value="$PROJECT_DIR$/knockout_talk_2/js/modules/ApplicationStructure.js" />
-        <option value="$PROJECT_DIR$/knockout_talk_2/templates/ThankYou.html" />
-        <option value="$PROJECT_DIR$/knockout_talk_2/templates/Outline.html" />
-        <option value="$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/01_raw_jquery.js" />
-        <option value="$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/02_raw_jquery.js" />
-        <option value="$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/05_arrays.html" />
-        <option value="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/01_pojo_02.js" />
-        <option value="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/01_pojo_01.js" />
-        <option value="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/02_object_factory_01.js" />
-        <option value="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_02.html" />
-        <option value="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_02.js" />
         <option value="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_03.html" />
         <option value="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_03.js" />
         <option value="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_05.html" />
         <option value="$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_05.js" />
+        <option value="$PROJECT_DIR$/knockout_talk_2/samples/AdvancedExamples/02_matchpattern_04.js" />
+        <option value="$PROJECT_DIR$/functional_javascript/playground.js" />
+        <option value="$PROJECT_DIR$/functional_javascript/examples.html" />
+        <option value="$PROJECT_DIR$/functional_javascript/progressions.js" />
+        <option value="$PROJECT_DIR$/functional_javascript/example_stubs.js" />
+        <option value="$PROJECT_DIR$/functional_javascript/index.html" />
+        <option value="$PROJECT_DIR$/diving_into_knockout/connection_test.html" />
+        <option value="$PROJECT_DIR$/knockout_talk_2/sample_code.js" />
+        <option value="$PROJECT_DIR$/htf_diving_into_knockout/templates/sample.html" />
+        <option value="$PROJECT_DIR$/htf_diving_into_knockout/css/app.css" />
+        <option value="$PROJECT_DIR$/playground/ko-components.html" />
+        <option value="$PROJECT_DIR$/playground/ko-components.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1568" />
-    <option name="y" value="196" />
-    <option name="width" value="1278" />
-    <option name="height" value="678" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -321,199 +422,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Talks">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Talks">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="knockout_talk_2">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Talks">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="knockout_talk_2">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="samples">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Talks">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="knockout_talk_2">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="samples">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="PatternExamples">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Talks">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="knockout_talk_2">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="js">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="All">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Talks">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Talks">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="knockout_talk_2">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Talks">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="knockout_talk_2">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="samples">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Talks">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="knockout_talk_2">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="samples">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="PatternExamples">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Talks">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="knockout_talk_2">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="js">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Talks">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="knockout_talk_2">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="js">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="modules">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -522,139 +430,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="knockout_talk_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="knockout_talk_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="knockout_talk_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="knockout_talk_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PatternExamples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="knockout_talk_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Talks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="knockout_talk_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="editor" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../knockout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../knockout-components" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -662,11 +449,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\Talks\playground\lib" />
+      <recent name="C:\code\Talks\diving_into_knockout" />
+      <recent name="C:\code\Talks\functional_javascript" />
+      <recent name="C:\code\Talks\functional_javascript\ext" />
       <recent name="C:\code\Talks\knockout_talk_2\templates" />
-      <recent name="C:\code\Talks\knockout_talk_2\js\modules" />
-      <recent name="C:\code\Talks\knockout_talk_2\samples\AdvancedExamples" />
-      <recent name="C:\code\Talks\knockout_talk_2\samples\BindingHandlerExamples" />
-      <recent name="C:\code\Talks\knockout_talk_2\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\code\Talks\knockout_talk_2\samples\AdvancedExamples" />
@@ -737,13 +524,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1568" y="196" width="1278" height="678" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15603584" sideWeight="0.32628062" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24455206" sideWeight="0.65701556" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07470651" sideWeight="0.6097222" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -752,7 +540,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3429844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39027777" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -784,7 +572,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
@@ -817,118 +605,90 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/templates/Outline.html">
+    <entry file="file://$PROJECT_DIR$/htf_diving_into_knockout/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="6" selection-start="1321" selection-end="1321" vertical-scroll-proportion="-10.461538">
+        <state line="241" column="1" selection-start="2901" selection-end="2901" vertical-scroll-proportion="0.42889908" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rneimeyer_sample_presentation/js/section.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rneimeyer_sample_presentation/samples/one/code.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rneimeyer_sample_presentation/samples/one/just-js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rneimeyer_sample_presentation/samples/one/more.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rneimeyer_sample_presentation/samples/one/more.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rneimeyer_sample_presentation/templates/points.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rneimeyer_sample_presentation/templates/intro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rneimeyer_sample_presentation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="33" selection-start="590" selection-end="590" vertical-scroll-proportion="0.28132388" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htf_diving_into_knockout/js/section.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htf_diving_into_knockout/js/sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htf_diving_into_knockout/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="10" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htf_diving_into_knockout/templates/sample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="6" selection-start="1582" selection-end="1582" vertical-scroll-proportion="-21.653847" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playground/lib/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="27" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playground/ko-components.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="16" selection-start="411" selection-end="411" vertical-scroll-proportion="0.019562716">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/01_raw_jquery.js">
+    <entry file="file://$PROJECT_DIR$/playground/ko-components.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/02_raw_jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/05_arrays.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/BindingExamples/05_arrays.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="37" selection-start="257" selection-end="257" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/01_pojo_02.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="15" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/01_pojo_01.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="15" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/02_object_factory_01.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_01.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="191" selection-end="191" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_03.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="52" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.2692308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_02.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="25" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_03.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_05.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="52" selection-start="216" selection-end="216" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knockout_talk_2/samples/PatternExamples/06_widgets_05.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="64" selection-start="315" selection-end="315" vertical-scroll-proportion="0.46723044">
+        <state line="38" column="4" selection-start="726" selection-end="726" vertical-scroll-proportion="0.7546729">
           <folding />
         </state>
       </provider>

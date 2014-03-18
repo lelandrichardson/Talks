@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Functional JavaScript - Leland Richardson - Intelligible Babble</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style type="text/css">
+        .leftAlign {
+            text-align: left;
+        }
+        .rightAlign {
+            text-align: right;
+        }
+        .center {
+            text-align: center;
+        }
+
+        .fragment.render {
+            display:none;
+        }
+        .fragment.render.visible {
+            display: block;
+        }
+        .reveal .slides .fragment.render.first {
+            display: block;
+            opacity:1;
+        }
+        .reveal .slides .fragment.render.first.visible {
+            display: none;
+        }
+
+        .reveal .slides .fragment.hide {
+            display: block;
+            opacity:1;
+        }
+        .reveal .slides .fragment.hide.visible {
+            display: none;
+        }
+        .moreLinks {
+            font-size: 60% !important;
+            line-height: 60% !important;
+        }
+    </style>
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <style>
+        .reveal pre code {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <div class="slides">
+        <section>
+            <h1>Functional&nbsp;</h1>
+            <h1>javascript</h1>
+            <div>
+                <br>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div>Leland Richardson</div>
+            <div>
+                <a href="http://twitter.com/intelligibabble">@intelligibabble</a>
+            </div>
+            <div>
+                <a href="http://tech.pro/leland">tech.pro/leland</a>
+            </div>
+            <div>
+                <br>
+                Follow Along: <a href="http://bit.ly/fn_js_talk">bit.ly/fn_js_talk</a>
+            </div>
+        </section>
+        <section>
+            <h2>Is javascript functional?</h2>
+        </section>
+        <section>
+            <h2>What makes a language&nbsp;</h2>
+            <h2>"functional"?</h2>
+            <div>
+                <br>
+            </div>
+            <div>
+                <ul>
+                    <li>functions are "first class" objects</li>
+                    <li>Higher order functions</li>
+                    <li>lambda support</li>
+                    <li>closure</li>
+                    <li class="fragment" style="color: darkred;">no "state" :(</li>
+                    <li class="fragment" style="color: darkred;">recursion over looping</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Javascript: Origins</h2>
+            <br/><br/>
+            <ul>
+                <li><b>Scheme</b><span class="fragment">: closures and scoping</span></li>
+                <li><b>Self</b><span class="fragment">: prototype/object structure</span></li>
+                <li><b>Java</b><span class="fragment">: syntax style</span></li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>Function Scope in Javascript</h2>
+            <div>
+                <br>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div>
+                <ul>
+                    <li class="fragment">The context of an inner function includes the scope of the outer function</li>
+                    <li class="fragment">An inner function enjoys that context even after the parent functions have returned.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>
+                <br>
+            </h2>
+            <h2>
+                <br>
+            </h2>
+            <h2>**EXAMPLES**</h2>
+            <h2>
+                <br>
+            </h2>
+        </section>
+        <section>
+            <h2>Why higher order functions?</h2>
+            <h2>Why No State?</h2>
+            <h2>Why?!&nbsp;</h2>
+            <div>
+                <br>
+            </div>
+            <div>
+                <ul>
+                    <li class="fragment">
+                        <span style="text-align: center;">functions as small units of reusable logic</span>
+                    </li>
+                    <li class="fragment">
+                        <span style="text-align: center;">pure functions are easy to test</span>
+                        <br>
+                    </li>
+                    <li class="fragment">
+                        <span style="text-align: center;">solve problems by composition of smaller problems</span>
+                        <br>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Is this&nbsp;</h2>
+            <h2>Functional Programming?</h2>
+            <br/>
+            <br/>
+            <br/>
+
+            <div>
+                <pre><code class="javascript">
+$(".signup").click(function(event){
+    $("#signupModal").show();
+    event.preventDefault();
+});
+
+</code></pre>
+            </div>
+        </section>
+                <section>
+            <h2>What About This?</h2>
+            <div>
+                <br>
+            </div>
+            <pre><code class="javascript">
+var firstTwoLetters = function(words){
+    return _.map(words, function(word){
+        return _.first(word,2);
+    });
+};
+
+</code></pre>
+<pre class="fragment"><code class="javascript">// ... a little bit of magic
+var firstTwoLetters = _.map(_.first(2));</code></pre>
+        </section>
+        <section>
+            <h2>
+                <br>
+            </h2>
+            <h2>
+                <br>
+            </h2>
+            <h2>**EXAMPLES**</h2>
+            <div>
+                <br>
+            </div>
+        </section>
+        <section>
+            <h2>Further Reading/Viewing</h2>
+            <div>
+                <br>
+            </div>
+            <div>
+                <a href="http://www.youtube.com/watch?v=m3svKOdZijA">Hey Underscore, You're Doing It Wrong!</a>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div>
+                <a href="http://osteele.com/sources/javascript/functional/">Oliver Steele's Functional.js</a>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div>
+                <a href="http://eloquentjavascript.net/chapter6.html">Eloquent JavaScript, Chapter 6</a>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div>
+                <a href="http://underscorejs.org/">Underscore.js</a>
+            </div>
+        </section>
+    </div>
+
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: 'default',
+        transition: 'concave',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+    
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function(){
+        $("a").each(function(){
+            var $el = $(this),
+                isLink = $el.attr("href").indexOf("#")!==0;
+            if(isLink){$el.attr("target","_blank");}
+        });
+    });
+</script>
+</body>
+</html>

@@ -13,7 +13,7 @@ ko.observable.fn.withoutPattern = function(pattern){
 
     interceptor(original());
 
-    return interceptor;
+    return interceptor;1
 };
 
 ko.applyBindings({

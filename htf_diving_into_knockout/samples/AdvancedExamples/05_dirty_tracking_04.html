@@ -1,0 +1,11 @@
+<b>Name: </b><input data-bind="dynamicValue: name"/><br/>
+<hr>
+<form data-bind="submit: ingredients.add">
+    <input data-bind="value: ingredients.next" placeholder="Ingredient"/>
+    <button type="submit">Add</button>
+</form>
+<ul data-bind="foreach: ingredients">
+    <li data-bind="text: $data, click: $parent.remove"></li>
+</ul>
+
+<h3 data-bind="text: dirtyFlag.isDirty() ? '(Dirty)' : '(Clean)'"></h3>

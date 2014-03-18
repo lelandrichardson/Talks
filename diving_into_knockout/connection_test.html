@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1 id="msg"></h1>
+
+
+
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script>
+    var $msg = $("#msg"),
+        $body = $("body");
+
+    var jsonip = "http://jsonip.com";
+
+    var dateRequested;
+
+    function fail(message){
+        $msg.text(message);
+        $body.css('backgroundColor','red');
+    }
+
+    function succeed(msElapsed){
+        $msg.text("CONNECTED: " + msElapsed);
+        $body.css('backgroundColor','blue');
+    }
+
+    function step(){
+        dateRequested = new Date();
+        var hasSucceeded = false,
+            hasCompleted = false;
+        $.ajax({url: jsonip})
+            .done(function(){
+                var msElapsed = new Date() - dateRequested;
+                hasSucceeded = true;
+                succeed(msElapsed);
+            })
+            .fail(function(a,b,c){
+                fail("REQUEST FAILED");
+            })
+            .always(function(){
+                hasCompleted = true;
+                setTimeout(step,3000);
+            });
+
+        setTimeout(function(){
+            if(!hasCompleted){
+                fail("TIMED OUT");
+            }
+        },5000);
+    }
+    setTimeout(step,1000);
+
+
+</script>
+</body>
+</html>
